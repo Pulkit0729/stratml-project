@@ -413,6 +413,50 @@
 				<xsl:text>
 				</xsl:text>
 				<!-- Is this external stylesheet required? <link type="text/css" rel="stylesheet" href="http://stratml.hyperbase.com/stratml.css"/> -->
+				
+				<!-- Chart.js library for line charts -->
+				<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+				
+				<!-- Additional styles for charts -->
+				<style type="text/css">
+					.chart-container {
+						margin: 20px 0;
+						padding: 15px;
+						border: 1px solid #ddd;
+						border-radius: 5px;
+						background-color: #f9f9f9;
+					}
+					.chart-title {
+						font-size: 16pt;
+						font-weight: bold;
+						color: #333;
+						margin-bottom: 10px;
+						text-align: center;
+					}
+					.chart-canvas {
+						width: 100% !important;
+						height: 400px !important;
+					}
+					.chart-toggle {
+						margin-bottom: 10px;
+						text-align: center;
+					}
+					.chart-toggle button {
+						background-color: #4CAF50;
+						color: white;
+						padding: 8px 16px;
+						border: none;
+						border-radius: 4px;
+						cursor: pointer;
+						margin: 0 5px;
+					}
+					.chart-toggle button:hover {
+						background-color: #45a049;
+					}
+					.chart-toggle button.active {
+						background-color: #2196F3;
+					}
+				</style>
 			</head>
 		
 			<body class="doc">
@@ -1094,6 +1138,10 @@
 
 		<xsl:apply-templates select="."
 			mode="makeMeasurementInstanceTable" />
+		
+		<!-- Add line chart visualization -->
+		<xsl:apply-templates select="."
+			mode="makeMeasurementInstanceChart" />
 
 		<!-- (dhh) moved representation of <Relationship> elements from above to 
 			below the indicators table just show the relationship if it contains element -->
@@ -1334,6 +1382,156 @@
             </xsl:choose>
         </td>
     </tr>
+</xsl:template>
+
+<!-- Template to create line charts for PerformanceIndicators -->
+<xsl:template match="*[local-name() = 'PerformanceIndicator']" mode="makeMeasurementInstanceChart">
+    <xsl:variable name="hasData" select="boolean(*[local-name() = 'MeasurementInstance']/*[local-name() = 'TargetResult' or local-name() = 'ActualResult']/*[local-name() = 'NumberOfUnits' and normalize-space(.) != ''])"/>
+    <xsl:variable name="chartId" select="generate-id(.)"/>
+    <xsl:variable name="measurementDimension" select="normalize-space(*[local-name() = 'MeasurementDimension'])"/>
+    <xsl:variable name="unitOfMeasurement" select="normalize-space(*[local-name() = 'UnitOfMeasurement'])"/>
+    
+    <xsl:if test="$hasData">
+        <div class="chart-container">
+            <div class="chart-title">
+                <xsl:value-of select="$measurementDimension"/>
+                <xsl:if test="$unitOfMeasurement != ''">
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="$unitOfMeasurement"/>
+                    <xsl:text>)</xsl:text>
+                </xsl:if>
+                <xsl:text> - Performance Over Time</xsl:text>
+            </div>
+            
+            <div class="chart-toggle">
+                <button onclick="toggleChartView('{$chartId}', 'line')" class="active" id="lineBtn{$chartId}">Line Chart</button>
+                <button onclick="toggleChartView('{$chartId}', 'bar')" id="barBtn{$chartId}">Bar Chart</button>
+            </div>
+            
+            <canvas id="chart{$chartId}" class="chart-canvas"></canvas>
+        </div>
+        
+        <script type="text/javascript">
+            <xsl:text>
+            (function() {
+                // Data extraction for chart </xsl:text><xsl:value-of select="$chartId"/><xsl:text>
+                var chartData = {
+                    labels: [],
+                    targetData: [],
+                    actualData: []
+                };
+                
+                // Extract data from measurement instances
+                var measurementInstances = [</xsl:text>
+                
+                <xsl:for-each select="*[local-name() = 'MeasurementInstance']">
+                    <xsl:sort select="*[local-name() = 'TargetResult']/*[local-name() = 'StartDate']"/>
+                    <xsl:variable name="startDate" select="normalize-space(*[local-name() = 'TargetResult']/*[local-name() = 'StartDate'] | *[local-name() = 'ActualResult']/*[local-name() = 'StartDate'])"/>
+                    <xsl:variable name="targetValue" select="normalize-space(*[local-name() = 'TargetResult']/*[local-name() = 'NumberOfUnits'])"/>
+                    <xsl:variable name="actualValue" select="normalize-space(*[local-name() = 'ActualResult']/*[local-name() = 'NumberOfUnits'])"/>
+                    
+                    <xsl:if test="$startDate != ''">
+                        <xsl:if test="position() > 1">,</xsl:if>
+                        <xsl:text>{
+                            date: "</xsl:text><xsl:value-of select="$startDate"/><xsl:text>",
+                            target: </xsl:text><xsl:choose><xsl:when test="$targetValue != ''"><xsl:value-of select="$targetValue"/></xsl:when><xsl:otherwise>null</xsl:otherwise></xsl:choose><xsl:text>,
+                            actual: </xsl:text><xsl:choose><xsl:when test="$actualValue != ''"><xsl:value-of select="$actualValue"/></xsl:when><xsl:otherwise>null</xsl:otherwise></xsl:choose><xsl:text>
+                        }</xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+                
+                <xsl:text>];
+                
+                // Sort by date and populate chart data
+                measurementInstances.sort(function(a, b) {
+                    return new Date(a.date) - new Date(b.date);
+                });
+                
+                measurementInstances.forEach(function(item) {
+                    var year = new Date(item.date).getFullYear();
+                    chartData.labels.push(year.toString());
+                    chartData.targetData.push(item.target);
+                    chartData.actualData.push(item.actual);
+                });
+                
+                // Chart configuration
+                var ctx = document.getElementById('chart</xsl:text><xsl:value-of select="$chartId"/><xsl:text>').getContext('2d');
+                window.chart</xsl:text><xsl:value-of select="$chartId"/><xsl:text> = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: chartData.labels,
+                        datasets: [{
+                            label: 'Target',
+                            data: chartData.targetData,
+                            borderColor: 'rgb(75, 192, 192)',
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderWidth: 2,
+                            fill: false,
+                            tension: 0.1
+                        }, {
+                            label: 'Actual',
+                            data: chartData.actualData,
+                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderWidth: 2,
+                            fill: false,
+                            tension: 0.1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: '</xsl:text><xsl:value-of select="$measurementDimension"/><xsl:text> Performance Trends'
+                            },
+                            legend: {
+                                display: true,
+                                position: 'top'
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: false,
+                                title: {
+                                    display: true,
+                                    text: '</xsl:text><xsl:value-of select="$unitOfMeasurement"/><xsl:text>'
+                                }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Year'
+                                }
+                            }
+                        },
+                        interaction: {
+                            intersect: false,
+                            mode: 'index'
+                        }
+                    }
+                });
+            })();
+            
+            // Global function to toggle chart types
+            if (typeof toggleChartView === 'undefined') {
+                window.toggleChartView = function(chartId, type) {
+                    var chart = window['chart' + chartId];
+                    if (chart) {
+                        chart.config.type = type;
+                        chart.update();
+                        
+                        // Update button states
+                        document.getElementById('lineBtn' + chartId).classList.remove('active');
+                        document.getElementById('barBtn' + chartId).classList.remove('active');
+                        document.getElementById(type + 'Btn' + chartId).classList.add('active');
+                    }
+                };
+            }
+            </xsl:text>
+        </script>
+    </xsl:if>
 </xsl:template>
 
 
