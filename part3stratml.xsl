@@ -51,267 +51,913 @@
                     <xsl:value-of select="concat($doc-type, ' - Source: ', //*[local-name(.) = 'Source'])" />
                 </title>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <!-- Google Fonts for modern typography -->
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+                
                 <style type="text/css">
-                    html{background-color:#EFEFFF;overflow:hidden;}
-                    .toc {float:left;width:20%;height:100vh;overflow:scroll;font-size:80%;}
-                    .toctitle {text-align:center;font-size:16pt;color:green;font-weight:bold;}
-                    .content {padding:15pt;background-color:#FFFFFF;float:left;width:76%;height:100vh;overflow:scroll;}
-                    pre,samp {font-family:Times-Roman;font-size:80%}
-                    .doc {font-family:Tahoma,Arial;font-size:14pt}
-                    .docheading {font-size:20pt;text-align:center;font-weight:bold}
-                    .docsubheading {font-size:15pt;text-align:center;color:green}
-                    .sourceheading {}
-                    .herald {font-family:sans-serif;font-size:12pt;font-weight:bold}
-                    .subtitle {text-align:left;font-size:14pt;color:black;font-weight:bold}
-                    .orgstaketitle {text-align:left;font-size:14pt;color:black;font-weight:bold}
-                    .orgstakeholder {margin-left:0in;font-family:Tahoma,Arial !important;font-size:12pt;}
-                    .toggle-input {display:none;}
-                    .indent {padding-left:50px;display:inline;}
-                    .objectives-container {display:none;}
-                    .toggle-input:checked ~ .objectives-container {display:block;}
-                    .goal-title {cursor:pointer;margin-left:25px;position:relative;}
+                    /* Modern CSS Reset and Base Styles */
+                    *, *::before, *::after {
+                        box-sizing: border-box;
+                    }
+                    
+                    html {
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        font-size: 16px;
+                        line-height: 1.6;
+                        overflow: hidden;
+                        height: 100vh;
+                    }
+                    
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                        color: #2d3748;
+                        background: transparent;
+                    }
+                    
+                    /* Modern Table of Contents */
+                    .toc {
+                        float: left;
+                        width: 22%;
+                        height: 100vh;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+                        border-right: 1px solid #e2e8f0;
+                        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+                        padding: 0 16px 16px 16px;
+                        font-size: 14px;
+                        margin: 0;
+                        position: relative;
+                        top: 0;
+                    }
+                    
+                    .toc::-webkit-scrollbar {
+                        width: 6px;
+                    }
+                    
+                    .toc::-webkit-scrollbar-track {
+                        background: #f1f5f9;
+                    }
+                    
+                    .toc::-webkit-scrollbar-thumb {
+                        background: #cbd5e1;
+                        border-radius: 3px;
+                    }
+                    
+                    .toc::-webkit-scrollbar-thumb:hover {
+                        background: #94a3b8;
+                    }
+                    
+                    .toctitle {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        text-align: center;
+                        margin: 8px 0 16px 0;
+                        padding: 16px 12px;
+                        background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+                        color: white;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+                    }
+                    
+                    /* Modern Content Area */
+                    .content {
+                        float: left;
+                        width: 78%;
+                        height: 100vh;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        background: #ffffff;
+                        padding: 32px 40px;
+                        margin: 0;
+                    }
+                    
+                    .content::-webkit-scrollbar {
+                        width: 8px;
+                    }
+                    
+                    .content::-webkit-scrollbar-track {
+                        background: #f8fafc;
+                    }
+                    
+                    .content::-webkit-scrollbar-thumb {
+                        background: #cbd5e1;
+                        border-radius: 4px;
+                    }
+                    
+                    .content::-webkit-scrollbar-thumb:hover {
+                        background: #94a3b8;
+                    }
+                    
+                    /* Modern Typography */
+                    .doc {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        line-height: 1.7;
+                        color: #374151;
+                    }
+                    
+                    .docheading {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 32px;
+                        font-weight: 700;
+                        text-align: center;
+                        margin: 0 0 16px 0;
+                        background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    }
+                    
+                    .docsubheading {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 24px;
+                        font-weight: 600;
+                        text-align: center;
+                        color: #4f46e5;
+                        margin: 0 0 32px 0;
+                        padding: 16px 0;
+                        border-bottom: 2px solid #e0e7ff;
+                    }
+                    
+                    .sourceheading {
+                        font-family: 'Source Sans Pro', monospace;
+                        font-size: 14px;
+                        color: #6366f1;
+                    }
+                    
+                    .herald {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #1e293b;
+                    }
+                    
+                    .subtitle {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin: 24px 0 16px 0;
+                        padding: 12px 0;
+                        border-left: 4px solid #4f46e5;
+                        padding-left: 16px;
+                    }
+                    
+                    /* Simple Administrative Information Layout */
+                    .admin-info-simple {
+                        display: block;
+                        margin: 32px 0;
+                        max-width: 800px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding: 0 20px;
+                    }
+                    
+                    .admin-section {
+                        border-left: 4px solid #4f46e5;
+                        padding-left: 20px;
+                        margin-bottom: 32px;
+                    }
+                    
+                    .admin-section:last-child {
+                        margin-bottom: 0;
+                    }
+                    
+                    .admin-title {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin: 0 0 16px 0;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                    }
+                    
+                    .admin-simple-field {
+                        margin-bottom: 12px;
+                        line-height: 1.6;
+                    }
+                    
+                    .admin-simple-label {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 600;
+                        color: #475569;
+                        display: inline;
+                        margin-right: 8px;
+                    }
+                    
+                    .admin-simple-value {
+                        font-family: 'Inter', sans-serif;
+                        color: #1e293b;
+                        display: inline;
+                    }
+                    
+                    .admin-simple-value a {
+                        color: #4f46e5;
+                        text-decoration: none;
+                    }
+                    
+                    .admin-simple-value a:hover {
+                        text-decoration: underline;
+                    }
+                    
+                    .stakeholder-simple {
+                        margin-top: 20px;
+                        padding-top: 16px;
+                        border-top: 1px solid #e2e8f0;
+                    }
+                    
+                    .stakeholder-simple-title {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 600;
+                        color: #475569;
+                        margin-bottom: 12px;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                    }
+                    
+                    .stakeholder-simple-item {
+                        margin-bottom: 8px;
+                        color: #1e293b;
+                        font-size: 14px;
+                    }
+                    
+                    .stakeholder-simple-item::before {
+                        content: "* ";
+                        color: #4f46e5;
+                        font-weight: bold;
+                        margin-right: 6px;
+                    }
+                    
+                    /* Modern Goal and Objective Styling */
+                    .goalhead {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 22px;
+                        font-weight: 600;
+                        text-align: center;
+                        color: #065f46;
+                        margin: 40px 0 24px 0;
+                        padding: 24px 32px;
+                        background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 50%, #dcfce7 100%);
+                        border-radius: 16px;
+                        border: 2px solid #a7f3d0;
+                        box-shadow: 0 8px 32px rgba(5, 150, 105, 0.12);
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    
+                    .goalhead::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 4px;
+                        background: linear-gradient(90deg, #10b981 0%, #059669 50%, #047857 100%);
+                    }
+                    
+                    .goaldesc {
+                        text-align: center;
+                        margin: 0 auto 24px auto;
+                        max-width: 800px;
+                        font-size: 16px;
+                        color: #4b5563;
+                        line-height: 1.7;
+                    }
+                    
+                    .objhead {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #1e40af;
+                        margin: 28px 0 16px 0;
+                        padding: 18px 24px;
+                        background: linear-gradient(135deg, #ffffff 0%, #eff6ff 50%, #dbeafe 100%);
+                        border-radius: 12px;
+                        border-left: 5px solid #3b82f6;
+                        box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
+                        position: relative;
+                    }
+                    
+                    .objhead::after {
+                        content: '';
+                        position: absolute;
+                        top: 8px;
+                        right: 16px;
+                        width: 6px;
+                        height: 6px;
+                        background: #3b82f6;
+                        border-radius: 50%;
+                        box-shadow: 12px 0 0 #60a5fa, 24px 0 0 #93c5fd;
+                    }
+                    
+                    /* Modern TOC Navigation */
+                    .tocentry {
+                        margin: 12px 0;
+                        padding: 12px 14px;
+                        border-radius: 8px;
+                        transition: all 0.2s ease;
+                        line-height: 1.5;
+                        clear: both;
+                        display: block;
+                        background: transparent;
+                        min-height: 20px;
+                    }
+                    
+                    .tocentry:hover {
+                        background: #f1f5f9;
+                        transform: translateX(4px);
+                    }
+                    
+                    .tocentry a {
+                        color: #475569;
+                        text-decoration: none;
+                        font-weight: 500;
+                        display: block;
+                        line-height: 1.5;
+                        word-wrap: break-word;
+                    }
+                    
+                    .tocentry a:hover {
+                        color: #4f46e5;
+                    }
+                    
+                    .tocsubentry {
+                        margin: 8px 0 8px 20px;
+                        padding: 10px 14px;
+                        border-radius: 6px;
+                        font-size: 13px;
+                        transition: all 0.2s ease;
+                        line-height: 1.4;
+                        clear: both;
+                        display: block;
+                        background: transparent;
+                        min-height: 16px;
+                    }
+                    
+                    .tocsubentry:hover {
+                        background: #e0e7ff;
+                        transform: translateX(4px);
+                    }
+                    
+                    .tocsubentry a {
+                        color: #64748b;
+                        text-decoration: none;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        word-wrap: break-word;
+                    }
+                    
+                    .tocsubentry a:hover {
+                        color: #4f46e5;
+                    }
+                    
+                    /* Fix for overlapping goal items */
+                    .goal-container {
+                        margin-bottom: 16px;
+                        clear: both;
+                    }
+                    
+                    .goal-title {
+                        cursor: pointer;
+                        margin: 16px 0 8px 0;
+                        padding: 14px 16px;
+                        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                        border-radius: 8px;
+                        border: 1px solid #cbd5e1;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        font-weight: 500;
+                        color: #1e293b;
+                        display: block;
+                        clear: both;
+                        min-height: 20px;
+                        line-height: 1.4;
+                    }
+                    
+                    /* Modern Collapsible Navigation */
+                    .toggle-input, .expand-all-toggle {
+                        display: none;
+                    }
+                    
+                    .goal-title {
+                        cursor: pointer;
+                        margin: 12px 0;
+                        padding: 12px 16px;
+                        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                        border-radius: 8px;
+                        border: 1px solid #cbd5e1;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        font-weight: 500;
+                        color: #1e293b;
+                    }
+                    
+                    .goal-title:hover {
+                        background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+                        border-color: #a5b4fc;
+                        transform: translateY(-1px);
+                        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+                    }
+                    
                     .goal-title::before {
-                        content:"";
-                        display:inline-block;
-                        width:0;
-                        height:0;
-                        border-left:4px solid #048;
-                        border-top:4px solid transparent;
-                        border-bottom:4px solid transparent;
-                        margin-right:8px;
-                        vertical-align:middle;
+                        content: "";
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border-left: 6px solid #4f46e5;
+                        border-top: 4px solid transparent;
+                        border-bottom: 4px solid transparent;
+                        margin-right: 12px;
+                        vertical-align: middle;
+                        transition: transform 0.3s ease;
                     }
+                    
                     .toggle-input:checked + .goal-title::before {
-                        border-left:4px solid transparent;
-                        border-right:4px solid transparent;
-                        border-top:4px solid #048;
-                        border-bottom:none;
+                        transform: rotate(90deg);
                     }
-                    .expand-all-toggle {display:none;}
-                    .expand-all-button {display:inline-block;margin-bottom:10px;padding:5px 10px;background-color:#f0f0f0;color:#333;text-decoration:none;border:1px solid #ccc;border-radius:4px;cursor:pointer;position:relative;left:50%;transform:translateX(-50%);}
-                    .expand-all-button:hover {background-color:#e0e0e0;}
-                    .expand-all-toggle:not(:checked) ~ .expand-all-button .collapse-text {display:none;}
-                    .expand-all-toggle:checked ~ .expand-all-button .expand-text {display:none;}
-                    .expand-all-toggle:checked ~ .goal-container .objectives-container {display:block;}
-                    .expand-all-toggle:checked ~ .goal-container .goal-title::before {
-                        border-left:4px solid transparent;
-                        border-right:4px solid transparent;
-                        border-top:4px solid #048;
-                        border-bottom:none;
+                    
+                    .objectives-container {
+                        display: none;
+                        margin-left: 20px;
+                        padding: 16px;
+                        background: #fafafa;
+                        border-radius: 8px;
+                        border-left: 3px solid #e0e7ff;
                     }
-                    .toctitle {font-weight:bold;margin-top:20px;}
-                    .tocentry {margin-left:20px;}
-                    .tocsubentry {margin-left:40px;}
-                    .placeholder {display:inline-block;width:30px;height:30px;background-color:#f0f0f0;text-align:center;line-height:30px;font-size:12px;color:#999;border:1px solid #ccc;}
-                    .tocsubtitle {text-align:left;font-size:14pt;color:black;font-weight:bold}
-                    .tocentry {margin-left:0in;text-indent:0.25in;margin-top:0pt;margin-bottom:0pt;}
-                    .tocsubentry {margin-left:0.25in;text-indent:0.25in;margin-top:0pt;margin-bottom:0pt;}
-                    .vmvhead {font-size:15pt;font-weight:bold}
-                    .vmvdesc {margin-left:.25in}
-                    .goalsep {display:visible;margin-top:16pt;margin-bottom:0pt}
-                    .goalhead {text-align:center;font-size:16pt;color:green;font-weight:bold;margin-top:8pt}
-                    .goaldesc {text-align:center;margin-left:25%;margin-right:25%}
-                    .goalstaketitle {margin-left:0.5in;text-align:left;font-size:14pt;color:black;font-weight:bold}
-                    .goalstakeholder {margin-left:1in;text-align:left;margin-left:5%;margin-right:5%}
-                    .objhead {font-size:15pt}
-                    .objstaketitle {margin-left:0.5in;text-align:left;font-size:12pt;color:black;font-weight:bold}
-                    .objstakeholder {margin-left:1in}
-                    .infotitle {margin-left:0.5in;text-indent:.25in;margin-top:0pt;margin-bottom:.25in;font-weight:bold;}
-                    .para-c {margin-left:.25in;margin-right:.25in;text-align:center;}
-                    .meta {font-size:8pt;text-align:right;margin-top:0pt;margin-bottom:0pt}
-                    .datatable {border-collapse:collapse;margin-left:10px;margin-right:10px;margin-top:10px;margin-bottom:10px;}
-                    .datatable, .datatable thead th, .datatable tbody th, .datatable tbody td {border:0px solid black;padding-left:10px;padding-right:10px;}
-                    .double-break {margin-top:1em;}
-                    .single-break {margin-top:0.5em;}
-                    a:link {text-decoration:none;color:#06D;}
-                    a:visited {color:#048D;}
-                    a:hover {color:black;}
+                    
+                    .toggle-input:checked ~ .objectives-container {
+                        display: block;
+                        animation: slideDown 0.3s ease;
+                    }
+                    
+                    @keyframes slideDown {
+                        from {
+                            opacity: 0;
+                            transform: translateY(-10px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                    
+                    /* Modern Expand All Button */
+                    .expand-all-button {
+                        display: inline-block;
+                        margin: 16px auto 24px auto;
+                        padding: 12px 24px;
+                        background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+                        color: white;
+                        text-decoration: none;
+                        border: none;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-weight: 600;
+                        font-size: 14px;
+                        transition: all 0.3s ease;
+                        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+                        text-align: center;
+                        display: block;
+                        width: fit-content;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    
+                    .expand-all-button:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+                    }
+                    
+                    /* Expand/Collapse All Functionality */
+                    .expand-all-toggle:checked ~ .expand-all-button .expand-text,
+                    .expand-all-toggle:not(:checked) ~ .expand-all-button .collapse-text {
+                        display: none;
+                    }
+                    
+                    .expand-all-toggle:checked ~ .expand-all-button .collapse-text,
+                    .expand-all-toggle:not(:checked) ~ .expand-all-button .expand-text {
+                        display: inline;
+                    }
+                    
+                    /* Control all goal toggles when expand-all is checked */
+                    .expand-all-toggle:checked ~ * .toggle-input {
+                        /* This will be handled by JavaScript for better control */
+                    }
+                    
+                    /* Modern Table Styling */
+                    .datatable {
+                        width: 100%;
+                        border-collapse: separate;
+                        border-spacing: 0;
+                        margin: 24px 0;
+                        background: white;
+                        border-radius: 12px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                        border: 1px solid #e2e8f0;
+                    }
+                    
+                    .datatable th {
+                        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                        padding: 16px 20px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 600;
+                        color: #1e293b;
+                        text-align: left;
+                        border-bottom: 2px solid #cbd5e1;
+                        font-size: 14px;
+                    }
+                    
+                    .datatable td {
+                        padding: 16px 20px;
+                        border-bottom: 1px solid #f1f5f9;
+                        color: #374151;
+                        font-size: 14px;
+                        vertical-align: top;
+                    }
+                    
+                    .datatable tr:last-child td {
+                        border-bottom: none;
+                    }
+                    
+                    /* Modern Paragraph and Text Styling */
+                    .para {
+                        margin: 16px 0;
+                        line-height: 1.7;
+                        color: #374151;
+                    }
+                    
+                    .para-c {
+                        margin: 16px 0;
+                        text-align: center;
+                        line-height: 1.7;
+                        color: #374151;
+                        font-weight: 500;
+                    }
+                    
+                    /* Modern Links */
+                    a:link {
+                        color: #4f46e5;
+                        text-decoration: none;
+                        font-weight: 500;
+                        transition: all 0.2s ease;
+                    }
+                    
+                    a:visited {
+                        color: #7c3aed;
+                    }
+                    
+                    a:hover {
+                        color: #3730a3;
+                        text-decoration: underline;
+                        text-decoration-thickness: 2px;
+                        text-underline-offset: 3px;
+                    }
+                    
+                    /* Stakeholder and Organization Styling */
+                    .orgstaketitle {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin: 20px 0 12px 0;
+                        padding: 12px 16px;
+                        background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+                        border-radius: 8px;
+                        border-left: 4px solid #f97316;
+                    }
+                    
+                    .orgstakeholder {
+                        margin: 12px 0;
+                        padding: 16px;
+                        background: #fafafa;
+                        border-radius: 8px;
+                        border: 1px solid #e5e7eb;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 14px;
+                        line-height: 1.6;
+                    }
+                    
+                    .goalstaketitle, .objstaketitle {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin: 16px 0 8px 0;
+                        padding: 8px 12px;
+                        background: #f1f5f9;
+                        border-radius: 6px;
+                        border-left: 3px solid #3b82f6;
+                    }
+                    
+                    .goalstakeholder, .objstakeholder {
+                        margin: 12px 0;
+                        padding: 12px;
+                        background: white;
+                        border-radius: 6px;
+                        border: 1px solid #e5e7eb;
+                        font-size: 14px;
+                        line-height: 1.6;
+                    }
+                    
+                    /* Utility Classes */
+                    .double-break {
+                        margin-top: 32px;
+                    }
+                    
+                    .single-break {
+                        margin-top: 16px;
+                    }
+                    
+                    .meta {
+                        font-size: 12px;
+                        color: #6b7280;
+                        text-align: right;
+                        margin: 8px 0;
+                        font-style: italic;
+                    }
+                    
+                    .infotitle {
+                        font-weight: 600;
+                        margin: 16px 0 8px 0;
+                        color: #374151;
+                        font-size: 16px;
+                    }
+                    
+                    /* Modern pre and code styling */
+                    pre, samp {
+                        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+                        font-size: 13px;
+                        background: #f8fafc;
+                        padding: 12px 16px;
+                        border-radius: 8px;
+                        border: 1px solid #e2e8f0;
+                        overflow-x: auto;
+                        line-height: 1.5;
+                    }
+                    
+                    /* Placeholder styling */
+                    .placeholder {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+                        color: #64748b;
+                        border: 1px solid #cbd5e1;
+                        border-radius: 8px;
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
                 </style>
                 
                 <!-- Chart.js library for line charts -->
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Handle expand all/collapse all functionality
+                        const expandAllToggle = document.getElementById('expand-all');
+                        if (expandAllToggle) {
+                            expandAllToggle.addEventListener('change', function() {
+                                const allGoalToggles = document.querySelectorAll('.toggle-input');
+                                allGoalToggles.forEach(function(toggle) {
+                                    toggle.checked = expandAllToggle.checked;
+                                });
+                            });
+                        }
+                    });
+                </script>
                 
-                <!-- Additional styles for charts -->
+                <!-- Additional modern styles for charts -->
                 <style type="text/css">
                     .chart-container {
-                        margin: 20px 0;
-                        padding: 15px;
-                        border: 1px solid #ddd;
-                        border-radius: 5px;
-                        background-color: #f9f9f9;
+                        margin: 32px 0;
+                        padding: 24px;
+                        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+                        border-radius: 16px;
+                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+                        border: 1px solid #e2e8f0;
                     }
+                    
                     .chart-title {
-                        font-size: 16pt;
-                        font-weight: bold;
-                        color: #333;
-                        margin-bottom: 10px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin-bottom: 20px;
                         text-align: center;
+                        padding-bottom: 12px;
+                        border-bottom: 2px solid #e0e7ff;
                     }
+                    
                     .chart-canvas {
                         width: 100% !important;
                         height: 400px !important;
+                        border-radius: 12px;
                     }
+                    
                     .chart-toggle {
-                        margin-bottom: 10px;
+                        margin-bottom: 20px;
                         text-align: center;
+                        display: flex;
+                        gap: 12px;
+                        justify-content: center;
+                        flex-wrap: wrap;
                     }
+                    
                     .chart-toggle button {
-                        background-color: #4CAF50;
+                        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
                         color: white;
-                        padding: 8px 16px;
+                        padding: 10px 20px;
                         border: none;
-                        border-radius: 4px;
+                        border-radius: 8px;
                         cursor: pointer;
-                        margin: 0 5px;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        transition: all 0.3s ease;
+                        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
                     }
+                    
                     .chart-toggle button:hover {
-                        background-color: #45a049;
+                        transform: translateY(-2px);
+                        box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
                     }
+                    
                     .chart-toggle button.active {
-                        background-color: #2196F3;
+                        background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+                        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
                     }
+                    
                     .chart-visibility-toggle {
-                        margin: 10px 0;
+                        margin: 24px 0;
                         text-align: center;
                     }
+                    
                     .chart-visibility-button {
-                        background-color: #008CBA;
+                        background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
                         color: white;
-                        padding: 8px 16px;
+                        padding: 12px 24px;
                         border: none;
-                        border-radius: 4px;
+                        border-radius: 10px;
                         cursor: pointer;
-                        font-size: 14px;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 600;
+                        font-size: 15px;
+                        transition: all 0.3s ease;
+                        box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
                     }
+                    
                     .chart-visibility-button:hover {
-                        background-color: #007B9A;
+                        transform: translateY(-2px);
+                        box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
                     }
+                    
                     .chart-content {
                         display: none;
+                        animation: fadeIn 0.4s ease;
                     }
+                    
                     .chart-content.visible {
                         display: block;
                     }
+                    
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                            transform: translateY(10px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                    
+                    /* Modern Qualitative Chart Styling */
                     .qualitative-chart-container {
-                        margin: 20px 0;
-                        padding: 15px;
-                        border: 1px solid #ddd;
-                        border-radius: 5px;
-                        background-color: #f5f5f5;
+                        margin: 32px 0;
+                        padding: 24px;
+                        background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+                        border-radius: 16px;
+                        box-shadow: 0 8px 32px rgba(245, 158, 11, 0.15);
+                        border: 1px solid #fbbf24;
                     }
+                    
                     .qualitative-chart-title {
-                        font-size: 16pt;
-                        font-weight: bold;
-                        color: #333;
-                        margin-bottom: 10px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #92400e;
+                        margin-bottom: 20px;
                         text-align: center;
+                        padding-bottom: 12px;
+                        border-bottom: 2px solid #fbbf24;
                     }
-                    .qualitative-chart-toggle {
-                        margin-bottom: 10px;
-                        text-align: center;
-                    }
-                    .qualitative-chart-toggle button {
-                        background-color: #9C27B0;
-                        color: white;
-                        padding: 6px 12px;
-                        border: none;
-                        border-radius: 4px;
-                        cursor: pointer;
-                        margin: 0 3px;
-                        font-size: 12px;
-                    }
-                    .qualitative-chart-toggle button:hover {
-                        background-color: #7B1FA2;
-                    }
-                    .qualitative-chart-toggle button.active {
-                        background-color: #E91E63;
-                    }
-                    .timeline-container {
-                        position: relative;
-                        margin: 20px 0;
-                    }
-                    .timeline-item {
-                        display: flex;
-                        align-items: center;
-                        margin: 10px 0;
-                        padding: 10px;
-                        background: #fff;
-                        border-left: 4px solid #2196F3;
-                        border-radius: 4px;
-                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                    }
-                    .timeline-status {
-                        width: 120px;
-                        font-weight: bold;
-                        color: #333;
-                    }
-                    .timeline-description {
-                        flex: 1;
-                        margin-left: 15px;
-                        font-size: 14px;
-                    }
-                    .timeline-date {
-                        width: 100px;
-                        text-align: right;
-                        color: #666;
-                        font-size: 12px;
-                    }
-                    .progress-bar-container {
-                        margin: 10px 0;
-                    }
-                    .progress-bar {
-                        background-color: #f0f0f0;
-                        border-radius: 10px;
-                        overflow: hidden;
-                        height: 25px;
-                        position: relative;
-                    }
-                    .progress-fill {
-                        height: 100%;
-                        background: linear-gradient(90deg, #4CAF50, #2196F3);
-                        transition: width 0.3s ease;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: white;
-                        font-size: 12px;
-                        font-weight: bold;
-                    }
+                    
                     .comparison-grid {
                         display: grid;
                         grid-template-columns: 1fr 1fr;
-                        gap: 20px;
-                        margin: 15px 0;
+                        gap: 24px;
+                        margin: 20px 0;
                     }
+                    
                     .comparison-item {
-                        padding: 15px;
-                        border-radius: 8px;
-                        border: 2px solid #ddd;
+                        padding: 20px;
+                        border-radius: 12px;
+                        border: 2px solid transparent;
+                        background: white;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                        transition: all 0.3s ease;
                     }
+                    
+                    .comparison-item:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                    }
+                    
                     .comparison-target {
-                        background-color: #E3F2FD;
-                        border-color: #2196F3;
+                        border-color: #3b82f6;
+                        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
                     }
+                    
                     .comparison-actual {
-                        background-color: #E8F5E8;
-                        border-color: #4CAF50;
+                        border-color: #10b981;
+                        background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
                     }
+                    
                     .comparison-header {
-                        font-weight: bold;
-                        margin-bottom: 10px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-bottom: 16px;
                         text-align: center;
+                        padding: 12px;
+                        border-radius: 8px;
+                        color: white;
                     }
-                    .status-indicator {
-                        display: inline-block;
-                        width: 12px;
-                        height: 12px;
-                        border-radius: 50%;
-                        margin-right: 8px;
+                    
+                    .comparison-target .comparison-header {
+                        background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
                     }
-                    .status-completed { background-color: #4CAF50; }
-                    .status-in-progress { background-color: #FF9800; }
-                    .status-planned { background-color: #2196F3; }
-                    .status-delayed { background-color: #F44336; }
+                    
+                    .comparison-actual .comparison-header {
+                        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+                    }
+                    
+                    .comparison-item > div:not(.comparison-header) {
+                        margin: 12px 0;
+                        padding: 12px 16px;
+                        background: rgba(255, 255, 255, 0.8);
+                        border-radius: 8px;
+                        border-left: 4px solid;
+                        font-size: 14px;
+                        line-height: 1.6;
+                    }
+                    
+                    .comparison-target > div:not(.comparison-header) {
+                        border-left-color: #3b82f6;
+                    }
+                    
+                    .comparison-actual > div:not(.comparison-header) {
+                        border-left-color: #10b981;
+                    }
+                    
+                    /* Responsive Design */
+                    @media (max-width: 768px) {
+                        .toc {
+                            width: 100%;
+                            height: auto;
+                            float: none;
+                            padding: 16px;
+                        }
+                        
+                        .content {
+                            width: 100%;
+                            float: none;
+                            padding: 20px;
+                        }
+                        
+                        .comparison-grid {
+                            grid-template-columns: 1fr;
+                            gap: 16px;
+                        }
+                        
+                        .chart-toggle {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        
+                        .chart-toggle button {
+                            width: 200px;
+                        }
+                    }
                 </style>
             </head>
             <body class="doc">
@@ -357,24 +1003,25 @@
                             <xsl:value-of select="*[local-name(.) = 'PublicationDate']" />
                         </p>
                     </xsl:for-each>
-                    <table summary="submitter and organization information" class="doc" align="center">
-                        <tr valign="top">
-                            <td>
-                                <xsl:variable name="submitter" select="$plan//*[local-name(.) = 'Submitter']" />
-                                <xsl:if test="normalize-space($submitter)">
-                                    <p class="subtitle">Submitter:</p>
-                                    <xsl:apply-templates select="$submitter" />
-                                </xsl:if>
-                            </td>
-                            <td>
-                                <xsl:variable name="org" select="$plan/*[local-name(.) = 'StrategicPlanCore']/*[local-name(.) = 'Organization']" />
-                                <xsl:if test="normalize-space($org)">
-                                    <p class="subtitle">Organization:</p>
-                                    <xsl:apply-templates select="$org" />
-                                </xsl:if>
-                            </td>
-                        </tr>
-                    </table>
+                    
+                    <!-- Simple Administrative Information Layout -->
+                    <div class="admin-info-simple">
+                        <xsl:variable name="submitter" select="$plan//*[local-name(.) = 'Submitter']" />
+                        <xsl:if test="normalize-space($submitter)">
+                            <div class="admin-section">
+                                <h3 class="admin-title">Submitter:</h3>
+                                <xsl:apply-templates select="$submitter" mode="simple" />
+                            </div>
+                        </xsl:if>
+                        
+                        <xsl:variable name="org" select="$plan/*[local-name(.) = 'StrategicPlanCore']/*[local-name(.) = 'Organization']" />
+                        <xsl:if test="normalize-space($org)">
+                            <div class="admin-section">
+                                <h3 class="admin-title">Organization:</h3>
+                                <xsl:apply-templates select="$org" mode="simple" />
+                            </div>
+                        </xsl:if>
+                    </div>
                     <xsl:apply-templates select="//*[contains('Vision Mission', local-name(.))]" />
                     <xsl:if test="//*[local-name(.) = 'Value' and normalize-space(.)]">
                         <p class="vmvhead" id="values_">
@@ -496,6 +1143,61 @@
         </blockquote>
     </xsl:template>
 
+    <!-- Simple Admin Templates -->
+    <xsl:template match="*[local-name(.) = 'Submitter']" mode="simple">
+        <xsl:for-each select="*[local-name(.) = 'GivenName' and normalize-space(.)]">
+            <div class="admin-simple-field">
+                <span class="admin-simple-label">Given name:</span>
+                <span class="admin-simple-value"><xsl:value-of select="." /></span>
+            </div>
+        </xsl:for-each>
+        <xsl:for-each select="*[local-name(.) = 'Surname' and normalize-space(.)]">
+            <div class="admin-simple-field">
+                <span class="admin-simple-label">Surname:</span>
+                <span class="admin-simple-value"><xsl:value-of select="." /></span>
+            </div>
+        </xsl:for-each>
+        <xsl:for-each select="*[local-name(.) = 'PhoneNumber' and normalize-space(.)]">
+            <div class="admin-simple-field">
+                <span class="admin-simple-label">Phone Number:</span>
+                <span class="admin-simple-value"><xsl:value-of select="." /></span>
+            </div>
+        </xsl:for-each>
+        <xsl:for-each select="*[local-name(.) = 'EmailAddress' and normalize-space(.)]">
+            <div class="admin-simple-field">
+                <span class="admin-simple-label">Email Address:</span>
+                <span class="admin-simple-value">
+                    <a href="mailto:{.}"><xsl:value-of select="." /></a>
+                </span>
+            </div>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="*[local-name(.) = 'Organization']" mode="simple">
+        <xsl:for-each select="*[local-name(.) = 'Name' and normalize-space(.)]">
+            <div class="admin-simple-field">
+                <span class="admin-simple-label">Name:</span>
+                <span class="admin-simple-value"><xsl:value-of select="." /></span>
+            </div>
+        </xsl:for-each>
+        <xsl:for-each select="*[local-name(.) = 'Acronym' and normalize-space(.)]">
+            <div class="admin-simple-field">
+                <span class="admin-simple-label">Acronym:</span>
+                <span class="admin-simple-value"><xsl:value-of select="." /></span>
+            </div>
+        </xsl:for-each>
+        <xsl:for-each select="*[local-name(.) = 'Description' and normalize-space(.)]">
+            <div class="admin-simple-field">
+                <span class="admin-simple-label">Description:</span>
+                <span class="admin-simple-value"><xsl:value-of select="." /></span>
+            </div>
+        </xsl:for-each>
+        <xsl:call-template name="stakeholder">
+            <xsl:with-param name="level" select="'org'" />
+            <xsl:with-param name="mode" select="'simple'" />
+        </xsl:call-template>
+    </xsl:template>
+
     <xsl:template match="*[local-name(.) = 'Organization']">
         <xsl:variable name="anchor">
             <xsl:call-template name="getid" />
@@ -531,11 +1233,35 @@
         </blockquote>
     </xsl:template>
 
+    <xsl:template match="*[local-name(.) = 'Organization']" mode="admin-card">
+        <xsl:for-each select="*[local-name(.) = 'Name' and normalize-space(.)]">
+            <div class="admin-field">
+                <div class="admin-field-label">Name:</div>
+                <div class="admin-field-value"><xsl:value-of select="." /></div>
+            </div>
+        </xsl:for-each>
+        <xsl:for-each select="*[local-name(.) = 'Acronym' and normalize-space(.)]">
+            <div class="admin-field">
+                <div class="admin-field-label">Acronym:</div>
+                <div class="admin-field-value"><xsl:value-of select="." /></div>
+            </div>
+        </xsl:for-each>
+        <xsl:for-each select="*[local-name(.) = 'Description' and normalize-space(.)]">
+            <div class="admin-field">
+                <div class="admin-field-label">Description:</div>
+                <div class="admin-field-value"><xsl:value-of select="." /></div>
+            </div>
+        </xsl:for-each>
+        <xsl:call-template name="stakeholder">
+            <xsl:with-param name="level" select="'org'" />
+            <xsl:with-param name="mode" select="'admin-card'" />
+        </xsl:call-template>
+    </xsl:template>
+
     <xsl:template name="toc">
         <xsl:param name="tocid" select="'toc'" />
         <xsl:for-each select="*/*[local-name(.) = 'StrategicPlanCore']">
             <p class="toctitle" id="{$tocid}">
-                <br />
                 <xsl:text>Table of Contents</xsl:text>
                 <hr width="60%" />
             </p>
@@ -707,13 +1433,26 @@
 
     <xsl:template name="stakeholder">
         <xsl:param name="level" select="'org'" />
+        <xsl:param name="mode" select="'normal'" />
         <xsl:if test="*[local-name(.) = 'Stakeholder' and normalize-space(.)]">
-            <p class="{concat($level, 'staketitle')}">
-                <xsl:text>Stakeholder(s):</xsl:text>
-            </p>
-            <xsl:apply-templates select="*[local-name(.) = 'Stakeholder']">
-                <xsl:with-param name="level" select="$level" />
-            </xsl:apply-templates>
+            <xsl:choose>
+                <xsl:when test="$mode = 'simple'">
+                    <div class="stakeholder-simple">
+                        <div class="stakeholder-simple-title">Stakeholder(s):</div>
+                        <xsl:apply-templates select="*[local-name(.) = 'Stakeholder']" mode="simple">
+                            <xsl:with-param name="level" select="$level" />
+                        </xsl:apply-templates>
+                    </div>
+                </xsl:when>
+                <xsl:otherwise>
+                    <p class="{concat($level, 'staketitle')}">
+                        <xsl:text>Stakeholder(s):</xsl:text>
+                    </p>
+                    <xsl:apply-templates select="*[local-name(.) = 'Stakeholder']">
+                        <xsl:with-param name="level" select="$level" />
+                    </xsl:apply-templates>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:if>
     </xsl:template>
 
@@ -733,6 +1472,13 @@
             </xsl:choose>
             <xsl:call-template name="name-desc-role" />
         </p>
+    </xsl:template>
+
+    <xsl:template match="*[local-name(.) = 'Stakeholder' and normalize-space(.)]" mode="simple">
+        <xsl:param name="level" select="'org'" />
+        <div class="stakeholder-simple-item">
+            <xsl:call-template name="name-desc-role" />
+        </div>
     </xsl:template>
 
     <xsl:template name="name-desc-role">
