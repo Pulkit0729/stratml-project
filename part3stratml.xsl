@@ -302,8 +302,8 @@
                         font-weight: 600;
                         text-align: center;
                         color: #065f46;
-                        margin: 40px 0 24px 0;
-                        padding: 24px 32px;
+                        margin: 16px 0 10px 0;
+                        padding: 12px 16px;
                         background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 50%, #dcfce7 100%);
                         border-radius: 16px;
                         border: 2px solid #a7f3d0;
@@ -336,8 +336,8 @@
                         font-size: 18px;
                         font-weight: 600;
                         color: #1e40af;
-                        margin: 28px 0 16px 0;
-                        padding: 18px 24px;
+                        margin: 14px 0 8px 0;
+                        padding: 8px 12px;
                         background: linear-gradient(135deg, #ffffff 0%, #eff6ff 50%, #dbeafe 100%);
                         border-radius: 12px;
                         border-left: 5px solid #3b82f6;
@@ -359,15 +359,15 @@
                     
                     /* Modern TOC Navigation */
                     .tocentry {
-                        margin: 12px 0;
-                        padding: 12px 14px;
+                        margin: 6px 0;
+                        padding: 8px 10px;
                         border-radius: 8px;
                         transition: all 0.2s ease;
-                        line-height: 1.5;
+                        line-height: 1.4;
                         clear: both;
                         display: block;
                         background: transparent;
-                        min-height: 20px;
+                        min-height: 16px;
                     }
                     
                     .tocentry:hover {
@@ -380,7 +380,7 @@
                         text-decoration: none;
                         font-weight: 500;
                         display: block;
-                        line-height: 1.5;
+                        line-height: 1.4;
                         word-wrap: break-word;
                     }
                     
@@ -389,16 +389,16 @@
                     }
                     
                     .tocsubentry {
-                        margin: 8px 0 8px 20px;
-                        padding: 10px 14px;
+                        margin: 4px 0 4px 16px;
+                        padding: 6px 10px;
                         border-radius: 6px;
                         font-size: 13px;
                         transition: all 0.2s ease;
-                        line-height: 1.4;
+                        line-height: 1.3;
                         clear: both;
                         display: block;
                         background: transparent;
-                        min-height: 16px;
+                        min-height: 14px;
                     }
                     
                     .tocsubentry:hover {
@@ -410,7 +410,7 @@
                         color: #64748b;
                         text-decoration: none;
                         font-weight: 400;
-                        line-height: 1.4;
+                        line-height: 1.3;
                         word-wrap: break-word;
                     }
                     
@@ -426,8 +426,8 @@
                     
                     .goal-title {
                         cursor: pointer;
-                        margin: 16px 0 8px 0;
-                        padding: 14px 16px;
+                        margin: 6px 0 4px 0;
+                        padding: 8px 10px;
                         background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
                         border-radius: 8px;
                         border: 1px solid #cbd5e1;
@@ -448,8 +448,8 @@
                     
                     .goal-title {
                         cursor: pointer;
-                        margin: 12px 0;
-                        padding: 12px 16px;
+                        margin: 6px 0;
+                        padding: 8px 10px;
                         background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
                         border-radius: 8px;
                         border: 1px solid #cbd5e1;
@@ -556,7 +556,7 @@
                         width: 100%;
                         border-collapse: separate;
                         border-spacing: 0;
-                        margin: 24px 0;
+                        margin: 12px 0;
                         background: white;
                         border-radius: 12px;
                         overflow: hidden;
@@ -566,7 +566,7 @@
                     
                     .datatable th {
                         background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-                        padding: 16px 20px;
+                        padding: 6px 8px;
                         font-family: 'Source Sans Pro', sans-serif;
                         font-weight: 600;
                         color: #1e293b;
@@ -576,7 +576,7 @@
                     }
                     
                     .datatable td {
-                        padding: 16px 20px;
+                        padding: 6px 8px;
                         border-bottom: 1px solid #f1f5f9;
                         color: #374151;
                         font-size: 14px;
@@ -600,6 +600,15 @@
                         line-height: 1.7;
                         color: #374151;
                         font-weight: 500;
+                    }
+                    
+                    /* Table Description Styling */
+                    .table-desc {
+                        margin: 8px 0;
+                        line-height: 1.5;
+                        color: #374151;
+                        font-size: 14px;
+                        text-align: left;
                     }
                     
                     /* Modern Links */
@@ -1263,7 +1272,6 @@
         <xsl:for-each select="*/*[local-name(.) = 'StrategicPlanCore']">
             <p class="toctitle" id="{$tocid}">
                 <xsl:text>Table of Contents</xsl:text>
-                <hr width="60%" />
             </p>
             <input type="checkbox" id="expand-all" class="expand-all-toggle" />
             <label for="expand-all" class="expand-all-button">
@@ -1338,7 +1346,6 @@
                 </div>
             </xsl:for-each>
         </xsl:for-each>
-        <br />
         <hr width="60%" />
     </xsl:template>
 
@@ -1415,7 +1422,6 @@
             </a>
             <xsl:for-each select="*[local-name(.) = 'Name' and normalize-space(.)]">
                 <xsl:apply-templates select="." />
-                <br />
             </xsl:for-each>
         </p>
         <xsl:for-each select="*[local-name(.) = 'Description' and normalize-space(.)]">
@@ -1426,7 +1432,6 @@
         <xsl:call-template name="stakeholder">
             <xsl:with-param name="level" select="'goal'" />
         </xsl:call-template>
-        <br />
         <xsl:apply-templates select="strat:OtherInformation" mode="transform" />
         <xsl:apply-templates select="*[contains('Objective  ', local-name(.))]" />
     </xsl:template>
@@ -1545,7 +1550,6 @@
             </a>
             <xsl:for-each select="*[local-name(.) = 'Name']">
                 <xsl:apply-templates select="." />
-                <br />
             </xsl:for-each>
         </p>
         <xsl:for-each select="*[local-name(.) = 'Description']">
@@ -1827,7 +1831,7 @@
 
     <xsl:template match="*[local-name() = 'Description' and normalize-space(.)]">
         <Description>
-            <p class="para">
+            <p class="table-desc">
                 <xsl:variable name="descText">
                     <xsl:call-template name="normalize-space">
                         <xsl:with-param name="string" select="."/>
