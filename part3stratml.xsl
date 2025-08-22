@@ -1796,7 +1796,9 @@
                                     </xsl:choose>
                                 </xsl:if>
                             </xsl:attribute>
-                            <xsl:value-of select="*[local-name(.) = 'NumberOfUnits']" />
+                            <xsl:call-template name="format-number-with-commas">
+                                <xsl:with-param name="number" select="*[local-name(.) = 'NumberOfUnits']"/>
+                            </xsl:call-template>
                         </xsl:when>
                         <xsl:otherwise>
                             <br />
@@ -1868,6 +1870,54 @@
                 <xsl:call-template name="remove-extra-spaces">
                     <xsl:with-param name="string" select="concat(substring-before($string, '  '), ' ', substring-after($string, '  '))"/>
                 </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!-- Template to format numbers with commas -->
+    <xsl:template name="format-number-with-commas">
+        <xsl:param name="number"/>
+        <xsl:choose>
+            <xsl:when test="string-length($number) > 3">
+                <xsl:variable name="remainder" select="string-length($number) mod 3"/>
+                <xsl:choose>
+                    <xsl:when test="$remainder = 0">
+                        <xsl:call-template name="add-commas">
+                            <xsl:with-param name="text" select="$number"/>
+                            <xsl:with-param name="position" select="3"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="substring($number, 1, $remainder)"/>
+                        <xsl:if test="string-length($number) > $remainder">,</xsl:if>
+                        <xsl:call-template name="add-commas">
+                            <xsl:with-param name="text" select="substring($number, $remainder + 1)"/>
+                            <xsl:with-param name="position" select="3"/>
+                        </xsl:call-template>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$number"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!-- Helper template to add commas recursively -->
+    <xsl:template name="add-commas">
+        <xsl:param name="text"/>
+        <xsl:param name="position"/>
+        <xsl:choose>
+            <xsl:when test="string-length($text) > $position">
+                <xsl:value-of select="substring($text, 1, $position)"/>
+                <xsl:text>,</xsl:text>
+                <xsl:call-template name="add-commas">
+                    <xsl:with-param name="text" select="substring($text, $position + 1)"/>
+                    <xsl:with-param name="position" select="3"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$text"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -2216,6 +2266,20 @@
                                 legend: {
                                     display: true,
                                     position: 'top'
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function(context) {
+                                            var label = context.dataset.label || '';
+                                            if (label) {
+                                                label += ': ';
+                                            }
+                                            if (context.parsed.y !== null) {
+                                                label += context.parsed.y.toLocaleString();
+                                            }
+                                            return label;
+                                        }
+                                    }
                                 }
                             },
                             scales: {
@@ -2224,6 +2288,11 @@
                                     title: {
                                         display: true,
                                         text: '</xsl:text><xsl:value-of select="$unitOfMeasurement"/><xsl:text>'
+                                    },
+                                    ticks: {
+                                        callback: function(value, index, values) {
+                                            return value.toLocaleString();
+                                        }
                                     }
                                 },
                                 x: {
