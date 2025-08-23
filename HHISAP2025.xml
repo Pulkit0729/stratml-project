@@ -1,0 +1,4189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="part3stratml.xsl"?>
+<PerformancePlanOrReport
+	xmlns="urn:ISO:std:iso:17469:tech:xsd:PerformancePlanOrReport"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:ISO:std:iso:17469:tech:xsd:PerformancePlanOrReport http://stratml.us/references/PerformancePlanOrReport20160216.xsd" Type="Strategic_Plan">
+	<Name>Town of Hilton Head Island Strategic Action Plan FY2026-FY2028 DRAFT</Name>
+	<Description>The Town of Hilton Head Island Town Council Strategic Action Plan serves as a foundational document that charts the course for the Towns future. It is a forward-thinking, community-informed guide that aligns the vision, mission, core values, and priorities of the Town Council with the needs and aspirations of the Islands residents, businesses, and stakeholders. By identifying goals, strategies and action items, and establishing measurable key performance indicators, the plan enables effective governance, responsible stewardship of resources, and long-term resilience for Hilton Head Island to facilitate the following: ^^ 1. Set a Unified Vision and Direction. ^ 2. Guide Decision-Making and Resource Allocation. ^ 3. Promote Accountability and Transparency. ^ 4. Engage and Reflect the Communitys Voice. ^ 5. Ensure Long-Term Sustainability.</Description>
+	<OtherInformation>[Submitter's Note:  This StratML rendition was compiled from the source with the assistance of Claude.ai, which associated the KPIs with the objectives (action items).  It was then edited in the XForm at https://stratml.us/forms2/Part1Form.xml to deal with issues that are unclear in the source, which fails to conform to Web accessibility guidelines, and thus are not readily subject to interpretation by artificial intelligence.  Note that performance indicators have not been provided for some of the objectives so how their achievement will be tracked is unclear.  Also the timelines specified for some of the objectives by graphical check marks in the source may not be directly applicable to the performance indicators by which progress will be measured and assessed.]</OtherInformation>
+	<StrategicPlanCore>
+		<Organization>
+			<Name>Town of Hilton Head Island</Name>
+			<Acronym>HHI</Acronym>
+			<Identifier>_bfa0e680-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<Description>The Town of Hilton Head Island is a municipal government serving residents, businesses, and visitors on Hilton Head Island, South Carolina, committed to preserving the Island's unique character while promoting sustainable growth and quality of life.</Description>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+		</Organization>
+		<Vision>
+			<Description>To reinvent sustainabilityagain. To focus on revitalization and modernization, and to build an inclusive and diverse community.</Description>
+			<Identifier>_bfa0eaa4-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+		</Vision>
+		<Mission>
+			<Description>To promote the health and vitality of the community we serve through ethical and inclusive programs, policies and actions.</Description>
+			<Identifier>_bfa0ec3e-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+		</Mission>
+		<Value>
+			<Name>Inclusiveness</Name>
+			<Description>Fostering an Inclusive and Multi-Dimensional Community</Description>
+		</Value>
+		<Value>
+			<Name>Community</Name>
+			<Description>Building a Connected and Collaborative Community</Description>
+		</Value>
+		<Value>
+			<Name>Excellence</Name>
+			<Description>Relentless Pursuit of Excellence</Description>
+		</Value>
+		<Value>
+			<Name>Sustainability</Name>
+			<Description>Redefining Environmental Sustainability</Description>
+		</Value>
+		<Value>
+			<Name>Regionality</Name>
+			<Description>Expanding to Embrace an Integrated Regional Focus</Description>
+		</Value>
+		<Value>
+			<Name>Revitalization</Name>
+			<Description>Revitalize and Modernize the Economy</Description>
+		</Value>
+		<Value>
+			<Name>Infrastructure</Name>
+			<Description>Innovative Approach to Create "Right-Sized Infrastructure"</Description>
+		</Value>
+		<Goal>
+			<Name>Growth Management</Name>
+			<Description>Protect Island character through growth management.</Description>
+			<Identifier>_bfa0ed42-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>1</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Preserve Hilton Head Island's unique environmental, cultural, and community character through thoughtful and intentional management of growth. Align land use policies, regulatory tools, community design standards, and preservation strategies to guide future development -- ensuring it reflects the values and expectations of the Islands residents while enhancing long-term quality of life. ^^ Strategy ~ Advance a coordinated, long-term approach to managing growth by implementing a comprehensive growth management framework. This strategy will align land use regulations, planning tools, land acquisition efforts, and capital improvement program investments to preserve Hilton Head Island's distinctive identity -- while supporting sustainable development and protecting the Islands natural and cultural resources.</OtherInformation>
+			<Objective>
+				<Name>Moratorium</Name>
+				<Description>Assess adoption of a moratorium limited in time and limited to the following uses: Timeshares/Interval Occupancy, Short-term Rentals, Major Subdivisions</Description>
+				<Identifier>_bfa0ee64-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.1</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>1.1.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e965cc-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_1</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Land Use</Name>
+				<Description>Update the Land Use Element of the Comprehensive Plan</Description>
+				<Identifier>_bfa0ee00-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.2</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Update the Land Use Element of the Comprehensive Plan to address development trends, community values, and strategic growth priorities by incorporating: A Growth Framework Map to guide where and how development should occur; A Future Land Use Map to guide zoning and infrastructure investments; A Greenprint Map to guide preservation of open space, protect natural resources, and balance environmental conservation with development needs. ^^ [This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>1.2.1</SequenceIndicator>
+					<MeasurementDimension>Land Use Element</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e95780-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_2</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Adoption of the Comprehensive Plan Amendments</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Adopted</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>1.2.2</SequenceIndicator>
+					<MeasurementDimension>Satisfaction</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3e95ffa-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_3</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Survey-based satisfaction rating (e.g., % of residents who agree that new development reflects Hilton Head Island's character)</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>District Plans</Name>
+				<Description>Adopt District Plans</Description>
+				<Identifier>_bfa0ee32-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.3</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Adopt District Plans as an Amendment to the Comprehensive Plan for the following districts: Skull Creek District, Main Street District, Mid-Island District, Parkway Arts District, Marshes District, Bridge to Beach District, Chaplin District, Forest Beach District. ^^ [This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>1.3.1</SequenceIndicator>
+					<MeasurementDimension>Plans</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9654a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_4</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Adoption of the District Plans</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Adopted</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Land Acquisition Manual</Name>
+				<Description>Update the Land Acquisition Manual to align with the Comprehensive Plan and provide more descriptive title to the manual and elements</Description>
+				<Identifier>_bfa0ee96-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.4</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>1.4.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e967a2-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_5</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Design Guide</Name>
+				<Description>Update the Design Guide and align with the updated Land Management Ordinance</Description>
+				<Identifier>_bfa0eec8-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.5</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2027.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>1.5.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e96ab8-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_6</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>LMO</Name>
+				<Description>Update the Land Management Ordinance (LMO) to align with District Plans and Comprehensive Plan</Description>
+				<Identifier>_bfa0eefa-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.6</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>1.6.1</SequenceIndicator>
+					<MeasurementDimension>LMO</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e96b30-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_7</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Adoption of the Land Management Ordinance</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Adopted</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Municipal Code</Name>
+				<Description>Update Town Municipal Code</Description>
+				<Identifier>_bfa0efd6-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.7</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Update Town Municipal Code to address the following: Beach Parking, Beach Park Rules, Park Rules, Short-Term Rental Rules, Administrative Citations, Fireworks, Noise, Special Events, Abandoned Boats, Refuse and Recycling. ^^ [This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>1.7.1</SequenceIndicator>
+					<MeasurementDimension>Amendments</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e974c2-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_8</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Adoption of Town Municipal Code Amendments</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Land Acquisitions</Name>
+				<Description>Advance Land Acquisitions to support Comprehensive Plan and Strategic Action Plan objectives</Description>
+				<Identifier>_bfa0ef36-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.8</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>1.8.1</SequenceIndicator>
+					<MeasurementDimension>Acres</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e96cac-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_9</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number of acres acquired, peak hour trips reduced, and development units reduced annually, that support Comprehensive Plan priorities (e.g., open space, parks, housing, resilience, transportation, or public facilities) </Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Acquired</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Collaboration</Name>
+				<Description>Collaborate with Beaufort County, regional agencies, and state partners to protect and manage growth</Description>
+				<Identifier>_bfa0efa4-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.9</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>Beaufort County</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Regional Agencies</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>State Partners</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>1.9.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e971ac-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_10</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Comp Plan</Name>
+				<Description>Complete the 5-year review of the Town's Comprehensive Plan</Description>
+				<Identifier>_bfa0f030-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.10</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>1.10.1</SequenceIndicator>
+					<MeasurementDimension>Amendments</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e97558-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_11</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Adoption of the Comprehensive Plan Amendments </Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Adopted</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Coordination</Name>
+				<Description>Enhance coordination among Town Staff and Town Council Board, Commission, and Committee appointments to improve efficiency, consistency, and quality assurance of the Development Plan Review Program</Description>
+				<Identifier>_bfa0ef68-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>1.11</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>1.11.1</SequenceIndicator>
+					<MeasurementDimension>Staff</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3e96fa4-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_12</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Percentage of applicable Town staff and appointed board members who completed annual training related to development review, land use, and design standards </Description>
+							<Descriptor>
+								<DescriptorName>Training</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator >
+					<SequenceIndicator>1.11.2</SequenceIndicator>
+					<MeasurementDimension>Applications</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3e97030-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_13</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Percentage of applications reviewed within the defined target customer service time frame</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Reviewed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Stormwater</Name>
+			<Description>Invest in stormwater management infrastructure.</Description>
+			<Identifier>_bfa0f06c-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>2</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Protect the Island's environmental quality, community resilience, and public safety by upgrading and maintaining a high-performing, island-wide stormwater system that adapts to changing conditions, leverages regional coordination, and aligns with Town priorities. ^^ Strategy ~ Modernize stormwater infrastructure through capital investments, strategic program evaluation, funding partnerships, and improved system management. Ensure the Stormwater Utility (SWU) Program is sustainable, fair, and effective in mitigating flood risk, enhancing water quality, and supporting resilient growth.</OtherInformation>
+			<Objective>
+				<Name>Program Assessment</Name>
+				<Description>Conduct a Stormwater Utility Program assessment</Description>
+				<Identifier>_bfa0f0ee-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>2.1</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Conduct a comprehensive Stormwater Utility Program assessment of Town, County, State and private systems infrastructure to improve operations, system management, and storm preparedness and recovery ^^ [This action item is scheduled for FY 2026 - 2027.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>2.1.1</SequenceIndicator>
+					<MeasurementDimension>Assessment &amp; Framework</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e97ac6-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_14</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Completion of SWU program assessment and prioritization framework; Frequency and coverage of stormwater system inspections and maintenance</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Infrastructure</Name>
+				<Description>Prioritize capital project investment in stormwater infrastructure</Description>
+				<Identifier>_bfa0f0a8-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>2.2</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>2.2.1</SequenceIndicator>
+					<MeasurementDimension>Projects</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e976e8-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_15</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number and total value of stormwater capital projects implemented annually</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Implemented</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>2.2.2</SequenceIndicator>
+					<MeasurementDimension>Events &amp; Complaints</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e97a12-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_16</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Reduction in flood events or drainage complaints in targeted areas</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Reduced</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Master Plan</Name>
+				<Description>Prepare an Island Wide Stormwater Master Plan</Description>
+				<Identifier>_bfa0f12a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>2.3</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2027 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>2.3.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e97c6a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_17</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Revenues</Name>
+				<Description>Assess the SWU reserves, revenues and stormwater utility rate and revenue model to support Town funding priorities</Description>
+				<Identifier>_bfa0f166-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>2.4</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>2.4.1</SequenceIndicator>
+					<MeasurementDimension>Rate Model</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e97fa8-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_18</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Completion of updated SWU rate model adopted and aligned with capital needs</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2028-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2028-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Funding Strategy</Name>
+				<Description>Develop a funding strategy with local, regional, state, and federal agencies</Description>
+				<Identifier>_bfa0f1ac-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>2.5</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Local Agencies</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Regional Agencies</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>State Agencies</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Federal Agencies</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>2.5.1</SequenceIndicator>
+					<MeasurementDimension>Funding</MeasurementDimension>
+					<UnitOfMeasurement>Dollars</UnitOfMeasurement>
+					<Identifier>_f3e9811a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_19</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Amount of external funding secured from federal, state, or regional sources</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Secured</DescriptorValue>
+							</Descriptor>
+							<StartDate>2028-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2028-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Corridors &amp; Streets</Name>
+			<Description>Enhance major corridors and streets.</Description>
+			<Identifier>_bfa0f1e8-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>3</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Enhance major corridors and streets to improve safety, mobility, aesthetics, and overall quality of life for residents, businesses, and visitors. Address critical infrastructure needs, improve quality of life, and support economic vitality by investing in coordinated improvements to Hilton Head Island's corridors and transportation network. ^^ Strategy ~ Develop and implement a coordinated corridor improvement framework that guides investment and enhances safety, mobility, and aesthetics. This strategy will integrate community input, environmental resilience, and smart infrastructure to create safe, vibrant, accessible, and connected corridors throughout the Island.</OtherInformation>
+			<Objective>
+				<Name>Major Thoroughfares</Name>
+				<Description>Adopt the Major Thoroughfares Corridor Plan</Description>
+				<Identifier>_bfa0f22e-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>3.1</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Adopt the Major Thoroughfares Corridor Plan to establish a unified, long-term vision that promotes context-sensitive design and complete streets principles, ensuring safe, accessible, and multimodal transportation while preserving the unique character and environmental quality of the Island's key corridors. ^^ [This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>3.1.1</SequenceIndicator>
+					<MeasurementDimension>Plan</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e982f0-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_20</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Adoption of the Major Corridors Plan and alignment with CIP and budget processes</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Adopted</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>3.1.2</SequenceIndicator>
+					<MeasurementDimension>Satisfaction</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e98746-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_21</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Resident and business owner satisfaction with safety, aesthetics, and mobility in key corridors</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Gateway Corridor</Name>
+				<Description>Advance the William Hilton Parkway Gateway Corridor</Description>
+				<Identifier>_bfa0f274-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>3.2</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Stoney Historic Neighborhood</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Advance the William Hilton Parkway Gateway Corridor, with a focus within Town limits, through intergovernmental collaboration that prioritizes safety, mobility, aesthetics, and the preservation of the Stoney Historic Neighborhood in alignment with the Town's core values. ^^ ^^ [This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>3.2.1</SequenceIndicator>
+					<MeasurementDimension>Corridors</MeasurementDimension>
+					<UnitOfMeasurement>Miles</UnitOfMeasurement>
+					<Identifier>_f3e98836-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_22</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Miles of corridors improved</Description>
+							<Descriptor>
+								<DescriptorName>Improved</DescriptorName>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>3.2.2</SequenceIndicator>
+					<MeasurementDimension>Projects</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e98a0c-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_23</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number of corridor beautification projects completed annually</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>CIP</Name>
+				<Description>Align the Town's Capital Improvements Program to reflect the phased implementation of the Major Thoughfares Corridors Plan, and other primary and secondary corridors, and provide cost estimates, funding strategies</Description>
+				<Identifier>_bfa0f2ba-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>3.3</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>South Carolina Department of Transportation</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>Beaufort County</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Align the Town's Capital Improvements Program to reflect the phased implementation of the Major Thoughfares Corridors Plan, and other primary and secondary corridors, and provide cost estimates, funding strategies through state and regional partners South Carolina Department of Transportation, Lowcountry Area Transportation Study, Beaufort County, etc. Priority projects include: Sea Pines Circle, Gum Tree Road, William Hilton Parkway  Chaplin Historic Neighborhood, Main Street, and other corridors. ^^ [This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output_Processing" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>3.3.1</SequenceIndicator>
+					<MeasurementDimension>Plan</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e98d86-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_24</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Adoption of the Major Corridors Plan and alignment with CIP and budget processes</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Adopted</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Jurisdictional Transfers</Name>
+				<Description>Assess public and private right-of-way ownership and coordinate with Beaufort County, SCDOT, and private property owners to consider jurisdictional transfers of priority corridors where appropriate</Description>
+				<Identifier>_bfa0f30a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>3.4</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>Beaufort County</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>SCDOT</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Private Property Owners</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2027 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>3.4.1</SequenceIndicator>
+					<MeasurementDimension>Investment</MeasurementDimension>
+					<UnitOfMeasurement>Dollars</UnitOfMeasurement>
+					<Identifier>_f3e98e80-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_25</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Level of intergovernmental investment in corridor projects</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Invested</DescriptorValue>
+							</Descriptor>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Trolley &amp; Shuttle</Name>
+				<Description>Prepare a feasibility study and cost-benefit analysis of the Island trolley and beach shuttle system</Description>
+				<Identifier>_bfa0f35a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>3.5</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2027 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>3.5.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e99060-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_26</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Public Safety</Name>
+			<Description>Enhance public safety readiness and facilities.</Description>
+			<Identifier>_bfa0f3a0-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>4</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Ensure a comprehensive, modern, and community-driven public safety system for Hilton Head Island that proactively addresses emergency response, code enforcement, public space management, and law enforcement needs. ^^ Strategy ~ Conduct a comprehensive evaluation and integration of all public safety-related programs and assets, aligned with best practices, community expectations, and future growth. Use this data to determine service gaps, optimize resources, and explore the feasibility and implications of providing comprehensive public safety services.</OtherInformation>
+			<Objective>
+				<Name>Services</Name>
+				<Description>Conduct a feasibility study and subsequent cost-benefit analysis for providing comprehensive public safety services</Description>
+				<Identifier>_bfa0f3f0-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>4.1</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>4.1.1</SequenceIndicator>
+					<MeasurementDimension>Study</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e993ee-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_27</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Completion of comprehensive Public Safety Services Feasibility Study; Beaufort County Sheriff's Office data including trends, service levels and response</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Facilities</Name>
+				<Description>Prepare a facility plan to design and develop a new Fire Rescue Headquarters, Emergency Operations Center, and Dispatch Center, addressing space, technology, and funding needs</Description>
+				<Identifier>_bfa0f44a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>4.2</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2027.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>4.2.1</SequenceIndicator>
+					<MeasurementDimension>Readiness</MeasurementDimension>
+					<UnitOfMeasurement>Rating</UnitOfMeasurement>
+					<Identifier>_f3e994fc-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_28</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Emergency Operations Center (EOC) readiness rating</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Low</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>4.2.2</SequenceIndicator>
+					<MeasurementDimension>Response Times</MeasurementDimension>
+					<UnitOfMeasurement>Minutes</UnitOfMeasurement>
+					<Identifier>_f3e996fa-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_29</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Fire Rescue response times and staffing coverage benchmarks</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Low</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Enforcement</Name>
+				<Description>Expand proactive public safety enforcement in neighborhoods, commercial corridors, and resort areas</Description>
+				<Identifier>_bfa0f49a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>4.3</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>4.3.1</SequenceIndicator>
+					<MeasurementDimension>Inspections</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e99aa6-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_30</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number of proactive code enforcement inspections per month; Code violation compliance and resolution rate</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue>7/1/2026</DescriptorValue>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>4.3.2</SequenceIndicator>
+					<MeasurementDimension>Response Time</MeasurementDimension>
+					<UnitOfMeasurement>Days</UnitOfMeasurement>
+					<Identifier>_f3e99bc8-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_31</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Response time to public complaints and violations</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Fast</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Storms &amp; Hurricanes</Name>
+				<Description>Strengthen storm and hurricane readiness</Description>
+				<Identifier>_bfa0f4ea-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>4.4</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>4.4.1</SequenceIndicator>
+					<MeasurementDimension>Risk Rating</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e99dda-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_32</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Insurance Services Office community risk rating and change over time</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Low</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Beaches</Name>
+				<Description>Develop and implement a comprehensive beach safety system</Description>
+				<Identifier>_bfa0f544-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>4.5</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Develop and implement a comprehensive beach safety system for Hilton Head Island, emphasizing enhanced signage, lifeguard stations, warning systems, and public education. ^^ [This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>4.5.1</SequenceIndicator>
+					<MeasurementDimension>Response Times</MeasurementDimension>
+					<UnitOfMeasurement>Minutes</UnitOfMeasurement>
+					<Identifier>_f3e9a1ae-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_33</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Beach-related emergency incident response times</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Low</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>4.5.2</SequenceIndicator>
+					<MeasurementDimension>Satisfaction</MeasurementDimension>
+					<UnitOfMeasurement>Ratings</UnitOfMeasurement>
+					<Identifier>_f3e9a2e4-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_34</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Customer satisfaction rating for beach operations and parking systems</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Economic Development</Name>
+			<Description>Support economic development and business recruitment and retention.</Description>
+			<Identifier>_bfa0f59e-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>5</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Foster a thriving economy recruiting high-quality jobs, retaining local businesses, supporting entrepreneurship and small businesses, and enhancing tourism and cultural assets. Align investments and partnerships to strengthen economic resilience and sustain the Island's unique character and community vibrancy. ^^ Strategy ~ Implement a coordinated economic development strategy that supports the local and regional economy, leverages local assets, enhances tourism and hospitality infrastructure, supports the workforce, promotes business participation, and maximizes public-private and intergovernmental investment to catalyze job retention, creation and sustainable growth.</OtherInformation>
+			<Objective>
+				<Name>ATAX</Name>
+				<Description>Improve South Carolina Accommodations Tax Grant Awards Application Process</Description>
+				<Identifier>_bfa0f652-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>5.1</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>5.1.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9a96a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_35</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Affiliate Agency Awards</Name>
+				<Description>Improve Affiliate Agency Awards Application Process</Description>
+				<Identifier>_bfa0f6ac-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>5.2</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Affiliate Agencies</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>5.2.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9aabe-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_36</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Cultural District</Name>
+				<Description>Establish a South Carolina Arts Commission designated Cultural District and explore grant and marketing opportunities</Description>
+				<Identifier>_bfa0f7ce-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>5.3</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>South Carolina Arts Commission</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>5.3.1</SequenceIndicator>
+					<MeasurementDimension>District</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9b518-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_37</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>South Carolina Arts Commission designated Cultural District established</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Established</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>DMO</Name>
+				<Description>Establish updated Destination Marketing Organization Contract and Marketing Plan</Description>
+				<Identifier>_bfa0f5ee-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>5.4</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>Destination Marketing Organization</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>5.4.1</SequenceIndicator>
+					<MeasurementDimension>Visitor Spending</MeasurementDimension>
+					<UnitOfMeasurement>Dollars</UnitOfMeasurement>
+					<Identifier>_f3e9a50a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_38</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Visitor spending and engagement</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Growing</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Local Business</Name>
+				<Description>Support a local business utilization program</Description>
+				<Identifier>_bfa0f706-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>5.5</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Local Businesses</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Small Businesses</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Minority-Owned Businesses</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Support a local business utilization program that expands access to procurement opportunities for Hilton Head Island-based businesses, including small and minority-owned businesses, to foster a competitive and robust local economy
+^^
+[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>5.5.1</SequenceIndicator>
+					<MeasurementDimension>Program</MeasurementDimension>
+					<UnitOfMeasurement>Usage</UnitOfMeasurement>
+					<Identifier>_f3e9ad0c-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_39</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Growth in local business utilization program</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Growing</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>5.5.2</SequenceIndicator>
+					<MeasurementDimension>Businesses</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3e9b14e-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_40</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Percentage of local businesses retained and operating in the Town that remain active year-over-year</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Events</Name>
+				<Description>Support Town-sponsored signature community events</Description>
+				<Identifier>_bfa0f76a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>5.6</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Support Town-sponsored signature community events including sporting events, recurring festivals, concerts, and heritage events that support small businesses and attract visitors.
+^^
+[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>5.6.1</SequenceIndicator>
+					<MeasurementDimension>Economic Return</MeasurementDimension>
+					<UnitOfMeasurement>Dollars</UnitOfMeasurement>
+					<Identifier>_f3e9b2b6-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_41</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Economic return from Town signature events such as: 1. RBC Heritage 2. Crescendo 3. Lantern Parade 4. Hilton Head Island Jam Songwriter Festival 5. Concours d'Elegance</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Recruitment &amp; Retention</Name>
+				<Description>Expand and diversify business sector recruitment and retention including healthcare, technology and other primary job sectors</Description>
+				<Identifier>_bfa0f8be-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>5.7</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Healthcare Sector</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Technology Sector</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>5.7.1</SequenceIndicator>
+					<MeasurementDimension>Businesses &amp; Jobs</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9ba9a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_42</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number of new businesses and jobs created in healthcare, technology, cultural, and other applicable primary job sectors</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>5.7.2</SequenceIndicator>
+					<MeasurementDimension>Students</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9bd10-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_43</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Annual student population in public and private schools, including higher education facilities such as Technical College of the Lowcountry and University of South Carolina - Beaufort</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Maintained</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Investments</Name>
+				<Description>Identify corridors, commercial nodes, and sites including privately-owned and eligible town-owned parcels for targeted investments</Description>
+				<Identifier>_bfa0f828-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>5.8</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>5.8.1</SequenceIndicator>
+					<MeasurementDimension>Parcels</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9b928-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_44</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Town-owned parcels activated for economic use</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Activated</DescriptorValue>
+							</Descriptor>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Resilience</Name>
+			<Description>Reinforce Island resilience.</Description>
+			<Identifier>_bfa0f922-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>6</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation> Reinforce Hilton Head Island's environmental, economic, and community resilience to prepare for and recover from future shocks and stressors, including weather events, environmental pressures, and natural disasters. ^^ Strategy ~ Implement an integrated resilience framework that protects the Islands natural resources, infrastructure, and community wellbeing by leveraging public investment, regulatory tools, operational enhancements, and regional partnerships.</OtherInformation>
+			<Objective>
+				<Name>Plan</Name>
+				<Description>Adopt the Resilience Plan as the Island's guiding document</Description>
+				<Identifier>_bfa0f986-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>6.1</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>6.1.1</SequenceIndicator>
+					<MeasurementDimension>Plan</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9c148-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_45</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Adopt the Resilience Plan</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Adopted</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Funding &amp; Readiness</Name>
+				<Description>Ensure long-term sustainability, funding, and operational readiness for periodic beach renourishment efforts, as well as disaster recovery operations</Description>
+				<Identifier>_bfa0f9f4-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>6.2</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Ensure long-term sustainability, funding, and operational readiness for periodic beach renourishment efforts, as well as disaster recovery operations, including alternative methods to offshore sand borrow sites, that protect public assets, natural resources, and quality of life for residents, while preserving the economic value of the shoreline.
+^^
+[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>6.2.1</SequenceIndicator>
+					<MeasurementDimension>Sand Sources</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9c2d8-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_46</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number of viable alternative sand sources identified and available for permitting</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Identified</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Floodplain Management</Name>
+				<Description>Maintain and improve Community Rating System (CRS) rating through updated floodplain management</Description>
+				<Identifier>_bfa0fb3e-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>6.3</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Maintain and improve Community Rating System (CRS) rating through updated floodplain management to include communication of flood risk and insurance savings to residents and businesses.
+^^
+[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>6.3.1</SequenceIndicator>
+					<MeasurementDimension>Class Rating</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9d048-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_47</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>CRS class rating maintained or improved annually</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Maintained</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Output_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>6.3.2</SequenceIndicator>
+					<MeasurementDimension>Outreach Activities</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9d656-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_48</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number of public outreach activities completed annually on flood risk and mitigation</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Municipal Code</Name>
+				<Description>Align the Town Municipal Code</Description>
+				<Identifier>_bfa0fac6-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>6.4</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Align the Town Municipal Code, including building and flood code provisions, and Land Management Ordinance (LMO) to reflect resilience objectives including setbacks, flood risk reduction, abandoned boat removal, and tree protection.
+^^
+[This action item is scheduled for FY 2027 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>6.4.1</SequenceIndicator>
+					<MeasurementDimension>Ordinances</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9cc56-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_49</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number of updated ordinances adopted supporting resilience (e.g., flood risk, setbacks, tree protection, abandoned vessels)</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Updated</DescriptorValue>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>CIP</Name>
+				<Description>Align the Town's Capital Improvements Program with resilience scoring criteria</Description>
+				<Identifier>_bfa0fa62-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>6.5</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Align the Town's Capital Improvements Program with resilience scoring criteria that prioritizes capital projects that improve stormwater systems, transportation, and public facilities with resilient design standards.
+^^
+[This action item is scheduled for FY 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>6.5.1</SequenceIndicator>
+					<MeasurementDimension>Scoring System</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9c56c-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_50</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Resilience scoring system adopted for CIP prioritization by FY2028</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Adopted</DescriptorValue>
+							</Descriptor>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>6.5.2</SequenceIndicator>
+					<MeasurementDimension>Investment</MeasurementDimension>
+					<UnitOfMeasurement>Dollars</UnitOfMeasurement>
+					<Identifier>_f3e9ca76-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_51</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Total capital investment directed to stormwater, transportation, and public facility projects with resilience features</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Invested</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Gullah Geechee Culture &amp; Heritage</Name>
+			<Description>Preserve, protect, and celebrate Gullah Geechee culture and heritage.</Description>
+			<Identifier>_bfa0fbac-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>7</SequenceIndicator>
+			<Stakeholder StakeholderTypeType="Generic_Group">
+				<Name>Gullah Geechee Historic Neighborhoods</Name>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Preserve, protect, and celebrate the cultural heritage, historic neighborhoods, and contributions of the Gullah Geechee community through intentional policy development, targeted investment, intergovernmental collaboration, and community-driven planning and implementation. ^^ Strategy ~ Implement a coordinated, community-led approach to safeguard the cultural and heritage identity and improve the quality of life in Gullah Geechee Historic Neighborhoods through planning, capital investment, policy reforms, and strategic partnerships to include local, state, and federal agencies.</OtherInformation>
+			<Objective>
+				<Name>Task Force</Name>
+				<Description>Facilitate the work of the Gullah Geechee Land and Cultural Preservation Task Force</Description>
+				<Identifier>_bfa0fc1a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>7.1</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Gullah Geechee Land and Cultural Preservation Task Force</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Facilitate the work of the Gullah Geechee Land and Cultural Preservation Task Force to prioritize implementation of land use tools and zoning strategies that preserve community character.
+^^
+[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>7.1.1</SequenceIndicator>
+					<MeasurementDimension>Action Items</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9d926-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_52</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Completion of action items from the Gullah Geechee Task Force Work Plan</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Vision, Coordination &amp; Delivery</Name>
+				<Description>Align the Gullah Geechee Land and Cultural Preservation Task Force with the Gullah Geechee Historic Neighborhoods Community Development Corporation to ensure a unified vision, coordination, and delivery of community priorities</Description>
+				<Identifier>_bfa0fc92-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>7.2</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>7.2.1</SequenceIndicator>
+					<MeasurementDimension>Satisfaction</MeasurementDimension>
+					<UnitOfMeasurement>Rating</UnitOfMeasurement>
+					<Identifier>_f3e9ddd6-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_53</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Community satisfaction and engagement measured through neighborhood feedback and participation in planning initiatives</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Muddy Creek</Name>
+				<Description>Establish a Muddy Creek Neighborhood Stabilization Plan combining zoning policy updates, and public infrastructure improvements</Description>
+				<Identifier>_c8003374-5eb2-11f0-ad7a-520f3083ea00</Identifier>
+				<SequenceIndicator>7.3</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Muddy Creek Neighborhood</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>7.3.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9ead8-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_54</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Church &amp; School</Name>
+				<Description>Prepare a relocation and mitigation agreement to preserve the St. James Baptist Church and Cherry Hill School</Description>
+				<Identifier>_bfa0fd0a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>7.4</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>St. James Baptist Church</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>Cherry Hill School</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>7.4.1</SequenceIndicator>
+					<MeasurementDimension>Relocation</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9e48e-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_55</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Completion of the relocation and mitigation of the St. James Baptist Church and Cherry Hill School</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Strategic Plan</Name>
+				<Description>Support the Gullah Geechee Historic Neighborhoods Community Development Corporation Strategic Plan</Description>
+				<Identifier>_c8002fdc-5eb2-11f0-ad7a-520f3083ea00</Identifier>
+				<SequenceIndicator>7.5</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>Gullah Geechee Historic Neighborhoods Community Development Corporation</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Support the Gullah Geechee Historic Neighborhoods Community Development Corporation Strategic Plan to implement neighborhood revitalization, land retention, and business incubation strategies in alignment with the Town's Programs and in coordination with the Housing Committee where appropriate.
+^^
+[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>7.5.1</SequenceIndicator>
+					<MeasurementDimension>Action Items</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9e70e-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_56</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Completion of action items from the Gullah Geechee Historic Neighborhoods Community Development Corporation Strategic Plan</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Infrastructure</Name>
+				<Description>Prioritize public infrastructure investments (roads, parks, stormwater drainage, fire hydrants, water/sewer, sidewalks, and other utilities) in Gullah Geechee Historic Neighborhoods through the Town's Capital Improvements Program (CIP)</Description>
+				<Identifier>_c80038ba-5eb2-11f0-ad7a-520f3083ea00</Identifier>
+				<SequenceIndicator>7.6</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Gullah Geechee Historic Neighborhoods</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>7.6.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9f32a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_57</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Funding</Name>
+				<Description>Facilitate the creation of a stable funding model and support long-term organizational sustainability of the Gullah Geechee Historic Neighborhoods Community Development Corporation</Description>
+				<Identifier>_c80037c0-5eb2-11f0-ad7a-520f3083ea00</Identifier>
+				<SequenceIndicator>7.7</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>Gullah Geechee Historic Neighborhoods Community Development Corporation</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>7.7.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9f0e6-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_58</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Cultural Assets</Name>
+				<Description>Establish a Cultural Asset Mapping Landmark Recognition Program that identifies historic resources, community landmarks, Gullah-owned businesses, archaeological, and heritage sites</Description>
+				<Identifier>_c8003a5e-5eb2-11f0-ad7a-520f3083ea00</Identifier>
+				<SequenceIndicator>7.8</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Gullah-Owned Businesses</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2027.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>7.8.1</SequenceIndicator>
+					<MeasurementDimension>Access</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3e9f7c6-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_59</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Improved access to historic resources and landmarks including Gullah Geechee historic cemeteries</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Improved</DescriptorValue>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Workforce Housing</Name>
+			<Description>Advance workforce housing opportunities.</Description>
+			<Identifier>_bfa0fd78-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>8</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Enhance workforce housing opportunities through a balanced and long-term approach that supports economic vitality and community well-being. ^^ Strategy ~ Advance a multi-pronged, sustained approach to workforce housing by implementing strategic projects, policy reforms, and programmatic investments. This strategy will leverage public-private partnerships, planning tools, regional coordination, and funding opportunities to improve the quality, accessibility, and diversity of housing options for Hilton Head Islands workforce.</OtherInformation>
+			<Objective>
+				<Name>Tools, Partnerships &amp; Services</Name>
+				<Description>Review the "Finding Home" Plan to establish a unified position and to strengthen workforce housing tools, partnerships, and services</Description>
+				<Identifier>_bfa0fe04-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.1</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>8.1.1</SequenceIndicator>
+					<MeasurementDimension>Housing Units</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3e9ffb4-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_60</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Number of new, preserved, or converted workforce housing units delivered annually by public and private sectors</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Delivered</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>8.1.2</SequenceIndicator>
+					<MeasurementDimension>Employer Programs</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea032e-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_61</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Utilization of employer-supported housing and transit programs</Description>
+							<Descriptor>
+								<DescriptorName>Usage</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>8.1.3</SequenceIndicator>
+					<MeasurementDimension>Program Elements</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea07c0-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_62</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Beaufort Jasper Housing Trust assessment of Hilton Head Island Housing Program elements</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Assessed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>8.1.4</SequenceIndicator>
+					<MeasurementDimension>Satisfaction</MeasurementDimension>
+					<UnitOfMeasurement>Ratings</UnitOfMeasurement>
+					<Identifier>_f3ea0efa-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_63</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Satisfaction levels from Island employers and housing program participants</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Policy, Projects &amp; Engagement</Name>
+				<Description>Align the Housing Committee with Town Council direction to ensure policy alignment, project prioritization, and community engagement</Description>
+				<Identifier>_bfa0fe7c-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.2</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>8.2.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea1148-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_64</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Index</Name>
+				<Description>Establish a Workforce Housing Index to track programmed and naturally occurring workforce housing to categorize affordability and attainability trends and guide Town Council decisions</Description>
+				<Identifier>_bfa10174-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.3</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>8.3.1</SequenceIndicator>
+					<MeasurementDimension>Commuters</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3ea207a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_65</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Reduction in the share of workforce commuting from off-island</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Reduced</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>8.3.2</SequenceIndicator>
+					<MeasurementDimension>Housing Types</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea243a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_66</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Measurement of all housing types by price vs. wage</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Measures</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2026-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate/>
+							<EndDate/>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Northpoint</Name>
+				<Description>Deliver the Northpoint Workforce Housing Neighborhood through the coordinated Public-Private Partnership</Description>
+				<Identifier>_bfa0fef4-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.4</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2027.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>8.4.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea153a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_67</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Bryant Road</Name>
+				<Description>Establish a Public-Private Partnership to Advance the Bryant Road Workforce Housing Initiatives</Description>
+				<Identifier>_bfa0ff80-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.5</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>8.5.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea1bc0-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_68</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Fund</Name>
+				<Description>Assess Housing Fund sustainability and a multi-year investment strategy by identifying diverse recurring funding sources to implement Town Workforce Housing priorities</Description>
+				<Identifier>_bfa1020a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.6</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>8.6.1</SequenceIndicator>
+					<MeasurementDimension>Fund Allocation</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3ea296c-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_69</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Percentage of Housing Fund allocation committed to Island-specific projects</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Sewer Connections</Name>
+				<Description>Secure grant funding for the Lateral Sewer Connection Grant Program to support infill housing, preserve legacy neighborhoods, improve water quality, and promote environmental health</Description>
+				<Identifier>_bfa10296-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.7</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>8.7.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea2ba6-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_70</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Home Repairs</Name>
+				<Description>Secure grant funding for the Home Repair Grant Program for income-qualified households to improve safety, accessibility, and housing preservation</Description>
+				<Identifier>_bfa10336-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.8</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>8.8.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea2ee4-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_71</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Summit</Name>
+				<Description>Participate in an Annual Housing Summit to report progress, promote innovation, and align regional, nonprofit, and employer contributions</Description>
+				<Identifier>_bfa103cc-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>8.9</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>8.9.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea345c-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_72</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Environmental Sustainability</Name>
+			<Description>Protect and enhance environmental sustainability.</Description>
+			<Identifier>_bfa1044e-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>9</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Protect and enhance Hilton Head Island's natural environment through resilient, responsible, and innovative practices that preserve our unique ecosystem and ensure long-term sustainability for future generations. ^^ Strategy ~ Implement an island-wide environmental sustainability program that advances conservation, reduces environmental impact, and promotes a culture of stewardship among residents, businesses, and visitors.</OtherInformation>
+			<Objective>
+				<Name>Business Licenses</Name>
+				<Description>Amend Town Municipal Code to strengthen business license requirements for solid waste haulers to ensure compliance with solid waste and recycling goals</Description>
+				<Identifier>_bfa10700-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>9.1</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Solid Waste Haulers</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>9.1.1</SequenceIndicator>
+					<MeasurementDimension>Ordinance</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea4226-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_73</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Business license ordinance amended to improve waste hauler reporting requirements</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Amended</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Outcome" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>9.1.2</SequenceIndicator>
+					<MeasurementDimension>Compliance</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3ea4a0a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_74</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Percent of licensed haulers in compliance with recycling and solid waste requirements</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Pest Management</Name>
+				<Description>Fully implement the organic-first Integrated Pest Management Policy</Description>
+				<Identifier>_bfa10868-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>9.2</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>9.2.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea584c-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_75</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Recycling</Name>
+				<Description>Expand recycling programs across all Town-managed parks and public facilities</Description>
+				<Identifier>_bfa10926-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>9.3</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>9.3.1</SequenceIndicator>
+					<MeasurementDimension>Waste</MeasurementDimension>
+					<UnitOfMeasurement>Tons</UnitOfMeasurement>
+					<Identifier>_f3ea5c3e-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_76</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Measure the number of tons of waste diverted from landfills through recycling and composting initiatives</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Sensitive Lands</Name>
+				<Description>Protect environmentally sensitive lands through acquisition and conservation easements</Description>
+				<Identifier>_bfa109c6-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>9.4</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>9.4.1</SequenceIndicator>
+					<MeasurementDimension>Sensitive Lands</MeasurementDimension>
+					<UnitOfMeasurement>Acres</UnitOfMeasurement>
+					<Identifier>_f3ea621a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_77</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Acres of environmentally sensitive land protected</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Protected</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Materials Recovery</Name>
+				<Description>Coordinate with Beaufort County to assess a long-term materials recovery facility for consideration</Description>
+				<Identifier>_bfa107a0-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>9.5</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Organization">
+					<Name>Beaufort County</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2027.]</OtherInformation>
+				<PerformanceIndicator >
+					<SequenceIndicator>9.5.1</SequenceIndicator>
+					<MeasurementDimension/>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea519e-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_78</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description/>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2027-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Composting</Name>
+				<Description>Establish town-wide composting programs for yard and food waste in collaboration with local businesses</Description>
+				<Identifier>_bfa104f8-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>9.6</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Local Businesses</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2027 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Input_Processing" PerformanceIndicatorType="Qualitative">
+					<SequenceIndicator>9.6.1</SequenceIndicator>
+					<MeasurementDimension>Pilot Program</MeasurementDimension>
+					<UnitOfMeasurement/>
+					<Identifier>_f3ea36b4-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_79</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Completion of composting pilot program</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Completed</DescriptorValue>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Awareness &amp; Education</Name>
+				<Description>Develop an awareness campaign with local schools for coastal ecology and conservation education</Description>
+				<Identifier>_bfa1061a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>9.7</SequenceIndicator>
+				<Stakeholder StakeholderTypeType="Generic_Group">
+					<Name>Local Schools</Name>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2027 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output_Processing" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>9.7.1</SequenceIndicator>
+					<MeasurementDimension>Participants</MeasurementDimension>
+					<UnitOfMeasurement>Number</UnitOfMeasurement>
+					<Identifier>_f3ea3fc4-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_80</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Record the number of residents, businesses, and visitors who actively participate in the Town's environmental programs, workshops, and volunteer events </Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Participated</DescriptorValue>
+							</Descriptor>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2026-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Town Facilities</Name>
+				<Description>Assess feasibility of transitioning town facilities to solar or other renewable energy sources and adopt green building practices in all new capital projects</Description>
+				<Identifier>_bfa10584-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>9.8</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>[This action item is scheduled for FY 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>9.8.1</SequenceIndicator>
+					<MeasurementDimension>Facilities</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3ea3a1a-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_81</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Monitor the percentage of Town facilities that are powered by solar or other renewable energy sources</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>High</DescriptorValue>
+							</Descriptor>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2027-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+		<Goal>
+			<Name>Parks &amp; Recreation</Name>
+			<Description>Enhance community well-being through implementation of the Parks and Recreation Master Plan and program enhancements.</Description>
+			<Identifier>_bfa10a5c-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+			<SequenceIndicator>10</SequenceIndicator>
+			<Stakeholder>
+				<Name/>
+				<Description/>
+				<Role>
+					<Name/>
+					<Description/>
+				</Role>
+			</Stakeholder>
+			<OtherInformation>Enhance the Town's park system, program, and recreational amenities to promote health, connectivity, environmental sustainability, and a high quality of life for all Hilton Head Island residents and visitors, through a community-driven, resilient, and environmentally responsible approach. ^^ Strategy ~ Systematically implement the Parks and Recreation Master Plan through coordinated capital investments, land acquisition, facility improvements, program enhancements, and operational planning that align with community needs, environmental standards, and financial sustainability.</OtherInformation>
+			<Objective>
+				<Name>CIP</Name>
+				<Description>Align Capital Improvements Program for community parks with approved Master Plans</Description>
+				<Identifier>_bfa10b1a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>10.1</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Align Capital Improvements Program for community parks with approved Master Plans with the following prioritization: Mid-Island Park - Phase 1, Crossings Park, Chaplin Park, Patterson Family Park, Taylor Family Park, Islanders Beach Park, Shelter Cove Park, Coligny Circle Pocket Park, Old School House Park, Barker Field, Chaplin Linear Park. ^^ [This action item is scheduled for FY 2026 - 2028.]</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>10.1.1</SequenceIndicator>
+					<MeasurementDimension>Projects</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3ea67ce-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_82</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>A measurable increase in the percentage of projects initiated from the Parks and Recreation Master Plan</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Increased</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>10.1.2</SequenceIndicator>
+					<MeasurementDimension>Satisfaction</MeasurementDimension>
+					<UnitOfMeasurement>Ratings</UnitOfMeasurement>
+					<Identifier>_f3ea6fee-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_83</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>An increase in resident satisfaction levels with parks and recreational programs and facilities</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Increased</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Renovations &amp; Upgrades</Name>
+				<Description>Provide renovation of existing parks with phased upgrades tied to user demand, safety, and barrier-free design principles</Description>
+				<Identifier>_bfa10bba-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>10.2</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation/>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>10.2.1</SequenceIndicator>
+					<MeasurementDimension>Parks</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3ea767e-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_84</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>Improvement in ADA compliance and inclusive features across all renovated and newly developed parks, aiming for 100% compliance</Description>
+							<Descriptor>
+								<DescriptorName>ADA Compliance</DescriptorName>
+								<DescriptorValue>Improved</DescriptorValue>
+							</Descriptor>
+							<NumberOfUnits>100</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+			<Objective>
+				<Name>Park Design</Name>
+				<Description>Integrate best management practices in park design</Description>
+				<Identifier>_bfa10c5a-5eb0-11f0-8f42-2c762f83ea00</Identifier>
+				<SequenceIndicator>10.3</SequenceIndicator>
+				<Stakeholder>
+					<Name/>
+					<Description/>
+					<Role>
+						<Name/>
+						<Description/>
+					</Role>
+				</Stakeholder>
+				<OtherInformation>Integrate best management practices in park design to include: Green infrastructure integration, Barrier-free design principles, Low impact development, Resilience planning, Public-private partnerships, Adaptive management</OtherInformation>
+				<PerformanceIndicator ValueChainStage="Output" PerformanceIndicatorType="Quantitative">
+					<SequenceIndicator>10.3.1</SequenceIndicator>
+					<MeasurementDimension>Green Infrastructure</MeasurementDimension>
+					<UnitOfMeasurement>Percentage</UnitOfMeasurement>
+					<Identifier>_f3ea7cdc-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+					<Relationship>
+						<Identifier>PLACEHOLDER_85</Identifier>
+						<ReferentIdentifier/>
+						<Name/>
+						<Description/>
+					</Relationship>
+					<MeasurementInstance>
+						<TargetResult>
+							<Description>The integration of green infrastructure (e.g., stormwater features, native landscaping) in 100% of eligible new capital park projects</Description>
+							<Descriptor>
+								<DescriptorName>Status</DescriptorName>
+								<DescriptorValue>Integrated</DescriptorValue>
+							</Descriptor>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</TargetResult>
+						<ActualResult>
+							<Description>[To be determined]</Description>
+							<Descriptor>
+								<DescriptorName/>
+								<DescriptorValue/>
+							</Descriptor>
+							<NumberOfUnits>0</NumberOfUnits>
+							<StartDate>2025-07-01</StartDate>
+							<EndDate>2028-06-30</EndDate>
+						</ActualResult>
+					</MeasurementInstance>
+					<OtherInformation/>
+				</PerformanceIndicator>
+			</Objective>
+		</Goal>
+	</StrategicPlanCore>
+	<AdministrativeInformation>
+		<Identifier>_f3ea8330-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+		<StartDate>2025-07-01</StartDate>
+		<EndDate>2028-06-30</EndDate>
+		<PublicationDate>2025-07-14</PublicationDate>
+		<Source>https://hiltonheadsc.portal.civicclerk.com/event/653/files/attachment/2296</Source>
+	</AdministrativeInformation>
+	<Submitter>
+		<Identifier>_f3ea86dc-5ec7-11f0-b8ad-990b65babdf6</Identifier>
+		<GivenName>Owen</GivenName>
+		<Surname>Ambur</Surname>
+		<PhoneNumber/>
+		<EmailAddress>hhi-plan@googlegroups.com</EmailAddress>
+	</Submitter>
+</PerformancePlanOrReport>
