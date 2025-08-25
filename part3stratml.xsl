@@ -122,6 +122,10 @@
                         color: white;
                         border-radius: 12px;
                         box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 12px;
                     }
                     
                     /* Modern Content Area */
@@ -190,6 +194,27 @@
                         color: #6366f1;
                     }
                     
+                    .sourceheading-inline {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        color: #374151;
+                        text-align: left;
+                        margin: 16px 0;
+                        padding: 0;
+                        font-weight: 500;
+                    }
+                    
+                    .sourceheading-inline a {
+                        color: #4f46e5;
+                        text-decoration: none;
+                        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+                        font-size: 14px;
+                    }
+                    
+                    .sourceheading-inline a:hover {
+                        text-decoration: underline;
+                    }
+                    
                     .herald {
                         font-family: 'Source Sans Pro', sans-serif;
                         font-size: 16px;
@@ -212,10 +237,8 @@
                     .admin-info-simple {
                         display: block;
                         margin: 32px 0;
-                        max-width: 800px;
-                        margin-left: auto;
-                        margin-right: auto;
-                        padding: 0 20px;
+                        padding: 0;
+                        text-align: left;
                     }
                     
                     .admin-section {
@@ -236,6 +259,24 @@
                         margin: 0 0 16px 0;
                         text-transform: uppercase;
                         letter-spacing: 0.5px;
+                    }
+                    
+                    /* Inline Admin Section Styles */
+                    .admin-inline-section {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin: 16px 0;
+                        color: #374151;
+                        text-align: left;
+                    }
+                    
+                    .admin-title-inline {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 600;
+                        color: #1e293b;
+                        font-size: 16px;
+                        margin-right: 0;
                     }
                     
                     .admin-simple-field {
@@ -266,6 +307,34 @@
                         text-decoration: underline;
                     }
                     
+                    /* Inline Admin Styles for Single Line Display */
+                    .admin-inline-info {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        line-height: 1.4;
+                        color: #1e293b;
+                    }
+                    
+                    .admin-inline-name {
+                        font-weight: 600;
+                        color: #1e293b;
+                    }
+                    
+                    .admin-inline-separator {
+                        color: #6b7280;
+                        font-weight: 400;
+                    }
+                    
+                    .admin-inline-contact {
+                        color: #4f46e5;
+                        font-weight: 500;
+                        text-decoration: none;
+                    }
+                    
+                    .admin-inline-contact:hover {
+                        text-decoration: underline;
+                    }
+                    
                     .stakeholder-simple {
                         margin-top: 20px;
                         padding-top: 16px;
@@ -289,10 +358,16 @@
                     }
                     
                     .stakeholder-simple-item::before {
-                        content: "* ";
+                        content: "\2022 ";
                         color: #4f46e5;
                         font-weight: bold;
                         margin-right: 6px;
+                    }
+                    
+                    .stakeholder-role {
+                        color: #6b7280;
+                        font-style: italic;
+                        font-size: 0.9em;
                     }
                     
                     /* Modern Goal and Objective Styling */
@@ -336,26 +411,14 @@
                         font-size: 18px;
                         font-weight: 600;
                         color: #1e40af;
-                        margin: 14px 0 8px 0;
-                        padding: 8px 12px;
-                        background: linear-gradient(135deg, #ffffff 0%, #eff6ff 50%, #dbeafe 100%);
-                        border-radius: 12px;
-                        border-left: 5px solid #3b82f6;
-                        box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
+                        margin: 20px 0 12px 0;
+                        padding: 0;
+                        background: none;
+                        border: none;
+                        box-shadow: none;
                         position: relative;
                     }
                     
-                    .objhead::after {
-                        content: '';
-                        position: absolute;
-                        top: 8px;
-                        right: 16px;
-                        width: 6px;
-                        height: 6px;
-                        background: #3b82f6;
-                        border-radius: 50%;
-                        box-shadow: 12px 0 0 #60a5fa, 24px 0 0 #93c5fd;
-                    }
                     
                     /* Modern TOC Navigation */
                     .tocentry {
@@ -508,47 +571,54 @@
                         }
                     }
                     
-                    /* Modern Expand All Button */
-                    .expand-all-button {
-                        display: inline-block;
-                        margin: 16px auto 24px auto;
-                        padding: 12px 24px;
-                        background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-                        color: white;
-                        text-decoration: none;
-                        border: none;
-                        border-radius: 8px;
+                    /* Modern Expand All Icon */
+                    .expand-all-icon {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 20px;
+                        height: 20px;
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 50%;
                         cursor: pointer;
-                        font-weight: 600;
-                        font-size: 14px;
+                        position: relative;
                         transition: all 0.3s ease;
-                        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
-                        text-align: center;
-                        display: block;
-                        width: fit-content;
-                        margin-left: auto;
-                        margin-right: auto;
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                        order: -1;
                     }
                     
-                    .expand-all-button:hover {
-                        transform: translateY(-2px);
-                        box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+                    .expand-all-icon:hover {
+                        background: rgba(255, 255, 255, 0.3);
+                        transform: scale(1.1);
                     }
                     
-                    /* Expand/Collapse All Functionality */
-                    .expand-all-toggle:checked ~ .expand-all-button .expand-text,
-                    .expand-all-toggle:not(:checked) ~ .expand-all-button .collapse-text {
-                        display: none;
+                    .expand-all-icon::before,
+                    .expand-all-icon::after {
+                        content: '';
+                        position: absolute;
+                        background: white;
+                        transition: all 0.3s ease;
                     }
                     
-                    .expand-all-toggle:checked ~ .expand-all-button .collapse-text,
-                    .expand-all-toggle:not(:checked) ~ .expand-all-button .expand-text {
-                        display: inline;
+                    .expand-all-icon::before {
+                        width: 12px;
+                        height: 2px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                     }
                     
-                    /* Control all goal toggles when expand-all is checked */
-                    .expand-all-toggle:checked ~ * .toggle-input {
-                        /* This will be handled by JavaScript for better control */
+                    .expand-all-icon::after {
+                        width: 2px;
+                        height: 12px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: transform 0.3s ease;
+                    }
+                    
+                    .expand-all-toggle:checked ~ .expand-all-icon::after {
+                        transform: translate(-50%, -50%) rotate(90deg);
                     }
                     
                     /* Modern Table Styling */
@@ -644,35 +714,145 @@
                     }
                     
                     .orgstakeholder {
-                        margin: 12px 0;
+                        margin: 8px 0;
                         padding: 16px;
-                        background: #fafafa;
+                        background: #ffffff;
                         border-radius: 8px;
                         border: 1px solid #e5e7eb;
                         font-family: 'Inter', sans-serif;
                         font-size: 14px;
-                        line-height: 1.6;
+                        line-height: 1.5;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                        transition: all 0.2s ease;
+                    }
+                    
+                    .orgstakeholder:hover {
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transform: translateY(-1px);
+                    }
+                    
+                    .stakeholder-card {
+                        margin: 8px 0;
+                        padding: 16px;
+                        background: #ffffff;
+                        border-radius: 8px;
+                        border: 1px solid #e5e7eb;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                        transition: all 0.2s ease;
+                    }
+                    
+                    .stakeholder-card:hover {
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transform: translateY(-1px);
+                    }
+                    
+                    .stakeholder-card-header {
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin-bottom: 8px;
+                        padding-bottom: 8px;
+                        border-bottom: 1px solid #f1f5f9;
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    .stakeholder-card-field {
+                        margin: 6px 0;
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                    
+                    .stakeholder-card-field .stakeholder-card-value:only-child {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                    
+                    .stakeholder-card-label {
+                        font-weight: 500;
+                        color: #64748b;
+                        min-width: 80px;
+                        margin-right: 12px;
+                        font-size: 13px;
+                    }
+                    
+                    .stakeholder-card-value {
+                        color: #374151;
+                        flex: 1;
+                        font-size: 14px;
                     }
                     
                     .goalstaketitle, .objstaketitle {
                         font-family: 'Source Sans Pro', sans-serif;
                         font-weight: 600;
                         color: #1e293b;
-                        margin: 16px 0 8px 0;
-                        padding: 8px 12px;
-                        background: #f1f5f9;
-                        border-radius: 6px;
-                        border-left: 3px solid #3b82f6;
+                        margin: 24px 0 12px 0;
+                        padding: 0;
+                        background: none;
+                        border: none;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                        border-bottom: 2px solid #e2e8f0;
+                        padding-bottom: 8px;
                     }
                     
                     .goalstakeholder, .objstakeholder {
-                        margin: 12px 0;
-                        padding: 12px;
-                        background: white;
-                        border-radius: 6px;
+                        margin: 8px 0;
+                        padding: 16px;
+                        background: #ffffff;
+                        border-radius: 8px;
                         border: 1px solid #e5e7eb;
                         font-size: 14px;
-                        line-height: 1.6;
+                        line-height: 1.5;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                        transition: all 0.2s ease;
+                    }
+                    
+                    .goalstakeholder:hover, .objstakeholder:hover {
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transform: translateY(-1px);
+                    }
+                    
+                    /* Apply card styling to all stakeholder containers */
+                    .orgstakeholder .stakeholder-card-header,
+                    .goalstakeholder .stakeholder-card-header,
+                    .objstakeholder .stakeholder-card-header {
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin-bottom: 8px;
+                        padding-bottom: 8px;
+                        border-bottom: 1px solid #f1f5f9;
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    .orgstakeholder .stakeholder-card-field,
+                    .goalstakeholder .stakeholder-card-field,
+                    .objstakeholder .stakeholder-card-field {
+                        margin: 6px 0;
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                    
+                    .orgstakeholder .stakeholder-card-label,
+                    .goalstakeholder .stakeholder-card-label,
+                    .objstakeholder .stakeholder-card-label {
+                        font-weight: 500;
+                        color: #64748b;
+                        min-width: 80px;
+                        margin-right: 12px;
+                        font-size: 13px;
+                    }
+                    
+                    .orgstakeholder .stakeholder-card-value,
+                    .goalstakeholder .stakeholder-card-value,
+                    .objstakeholder .stakeholder-card-value {
+                        color: #374151;
+                        flex: 1;
+                        font-size: 14px;
                     }
                     
                     /* Utility Classes */
@@ -994,13 +1174,10 @@
                         <xsl:variable name="anchor">
                             <xsl:call-template name="getid" />
                         </xsl:variable>
-                        <p class="docsubheading" id="{$anchor}">
+                        <p class="sourceheading-inline" id="{$anchor}">
                             <xsl:text>Source: </xsl:text>
-                            <br />
                             <a href="{*[local-name(.) = 'Source']}" target="_blank">
-                                <samp class="sourceheading">
-                                    <xsl:value-of select="*[local-name(.) = 'Source']" />
-                                </samp>
+                                <xsl:value-of select="*[local-name(.) = 'Source']" />
                             </a>
                         </p>
                         <p class="docsubheading">
@@ -1017,18 +1194,18 @@
                     <div class="admin-info-simple">
                         <xsl:variable name="submitter" select="$plan//*[local-name(.) = 'Submitter']" />
                         <xsl:if test="normalize-space($submitter)">
-                            <div class="admin-section">
-                                <h3 class="admin-title">Submitter:</h3>
-                                <xsl:apply-templates select="$submitter" mode="simple" />
-                            </div>
+                            <p class="admin-inline-section">
+                                <span class="admin-title-inline">Submitter: </span>
+                                <xsl:apply-templates select="$submitter" mode="inline" />
+                            </p>
                         </xsl:if>
                         
                         <xsl:variable name="org" select="$plan/*[local-name(.) = 'StrategicPlanCore']/*[local-name(.) = 'Organization']" />
                         <xsl:if test="normalize-space($org)">
-                            <div class="admin-section">
-                                <h3 class="admin-title">Organization:</h3>
-                                <xsl:apply-templates select="$org" mode="simple" />
-                            </div>
+                            <p class="admin-inline-section">
+                                <span class="admin-title-inline">Organization: </span>
+                                <xsl:apply-templates select="$org" mode="inline" />
+                            </p>
                         </xsl:if>
                     </div>
                     <xsl:apply-templates select="//*[contains('Vision Mission', local-name(.))]" />
@@ -1207,6 +1384,125 @@
         </xsl:call-template>
     </xsl:template>
 
+    <!-- Inline Admin Templates for Single Line Display -->
+    <xsl:template match="*[local-name(.) = 'Submitter']" mode="inline">
+        <span class="admin-inline-info">
+            <xsl:variable name="fullName">
+                <xsl:if test="*[local-name(.) = 'GivenName' and normalize-space(.)]">
+                    <xsl:value-of select="*[local-name(.) = 'GivenName']"/>
+                    <xsl:if test="*[local-name(.) = 'Surname' and normalize-space(.)]">
+                        <xsl:text> </xsl:text>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="*[local-name(.) = 'Surname' and normalize-space(.)]">
+                    <xsl:value-of select="*[local-name(.) = 'Surname']"/>
+                </xsl:if>
+            </xsl:variable>
+            
+            <xsl:variable name="contact">
+                <xsl:choose>
+                    <xsl:when test="*[local-name(.) = 'EmailAddress' and normalize-space(.)]">
+                        <xsl:value-of select="*[local-name(.) = 'EmailAddress']"/>
+                    </xsl:when>
+                    <xsl:when test="*[local-name(.) = 'PhoneNumber' and normalize-space(.)]">
+                        <xsl:value-of select="*[local-name(.) = 'PhoneNumber']"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:variable>
+            
+            <xsl:if test="normalize-space($fullName)">
+                <span class="admin-inline-name"><xsl:value-of select="normalize-space($fullName)"/></span>
+                <xsl:if test="normalize-space($contact)">
+                    <span class="admin-inline-separator"> (</span>
+                    <xsl:choose>
+                        <xsl:when test="*[local-name(.) = 'EmailAddress' and normalize-space(.)]">
+                            <a href="mailto:{$contact}" class="admin-inline-contact"><xsl:value-of select="$contact"/></a>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <span class="admin-inline-contact"><xsl:value-of select="$contact"/></span>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <span class="admin-inline-separator">)</span>
+                </xsl:if>
+            </xsl:if>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="*[local-name(.) = 'Organization']" mode="inline">
+        <span class="admin-inline-info">
+            <xsl:variable name="orgName" select="normalize-space(*[local-name(.) = 'Name'])"/>
+            <xsl:variable name="acronym" select="normalize-space(*[local-name(.) = 'Acronym'])"/>
+            
+            <xsl:if test="$orgName">
+                <span class="admin-inline-name"><xsl:value-of select="$orgName"/></span>
+                <xsl:if test="$acronym">
+                    <span class="admin-inline-separator"> (</span>
+                    <span class="admin-inline-contact"><xsl:value-of select="$acronym"/></span>
+                    <span class="admin-inline-separator">)</span>
+                </xsl:if>
+            </xsl:if>
+        </span>
+        
+        <!-- Display stakeholders for organization -->
+        <xsl:if test="*[local-name(.) = 'Stakeholder' and normalize-space(.)]">
+            <div class="stakeholder-simple">
+                <div class="stakeholder-simple-title">Stakeholders:</div>
+                <xsl:for-each select="*[local-name(.) = 'Stakeholder' and normalize-space(.)]">
+                    <div class="orgstakeholder">
+                        <div class="stakeholder-card-header">
+                            <xsl:choose>
+                                <xsl:when test="@StakeholderTypeType = 'Generic_Group'">
+                                    <img src="images/group.png" alt="Group" width="20px" height="20px" style="margin-right: 8px; vertical-align: middle;" />
+                                </xsl:when>
+                                <xsl:when test="@StakeholderTypeType = 'Person'">
+                                    <img src="images/person.png" alt="Person" width="20px" height="20px" style="margin-right: 8px; vertical-align: middle;" />
+                                </xsl:when>
+                                <xsl:when test="@StakeholderTypeType = 'Organization'">
+                                    <img src="images/organization.png" alt="Organization" width="20px" height="20px" style="margin-right: 8px; vertical-align: middle;" />
+                                </xsl:when>
+                            </xsl:choose>
+                            <xsl:value-of select="*[local-name() = 'Name']" />
+                        </div>
+                        <xsl:if test="*[local-name() = 'Description' and normalize-space(.)]">
+                            <div class="stakeholder-card-field">
+                                <span class="stakeholder-card-label">Description:</span>
+                                <span class="stakeholder-card-value">
+                                    <xsl:value-of select="*[local-name() = 'Description']" />
+                                </span>
+                            </div>
+                        </xsl:if>
+                        <xsl:if test="*[local-name() = 'RoleType' and normalize-space(.)]">
+                            <div class="stakeholder-card-field">
+                                <span class="stakeholder-card-label">Role Type:</span>
+                                <span class="stakeholder-card-value">
+                                    <xsl:for-each select="*[local-name() = 'RoleType' and normalize-space(.)]">
+                                        <xsl:if test="position() > 1">, </xsl:if>
+                                        <xsl:value-of select="." />
+                                    </xsl:for-each>
+                                </span>
+                            </div>
+                        </xsl:if>
+                        <xsl:if test="*[local-name() = 'Role' and normalize-space(.)]">
+                            <xsl:for-each select="*[local-name() = 'Role' and normalize-space(.)]">
+                                <div class="stakeholder-card-field">
+                                    <span class="stakeholder-card-value">
+                                        <strong><xsl:value-of select="*[local-name() = 'Name']" /></strong>
+                                        <xsl:if test="*[local-name() = 'Description' and normalize-space(.)]">
+                                            <span> - <xsl:value-of select="*[local-name() = 'Description']" /></span>
+                                        </xsl:if>
+                                        <xsl:if test="*[local-name() = 'RoleType' and normalize-space(.)]">
+                                            <span class="stakeholder-role"> (<xsl:value-of select="*[local-name() = 'RoleType']" />)</span>
+                                        </xsl:if>
+                                    </span>
+                                </div>
+                            </xsl:for-each>
+                        </xsl:if>
+                    </div>
+                </xsl:for-each>
+            </div>
+        </xsl:if>
+    </xsl:template>
+
     <xsl:template match="*[local-name(.) = 'Organization']">
         <xsl:variable name="anchor">
             <xsl:call-template name="getid" />
@@ -1270,14 +1566,11 @@
     <xsl:template name="toc">
         <xsl:param name="tocid" select="'toc'" />
         <xsl:for-each select="*/*[local-name(.) = 'StrategicPlanCore']">
+            <input type="checkbox" id="expand-all" class="expand-all-toggle" />
             <p class="toctitle" id="{$tocid}">
+                <label for="expand-all" class="expand-all-icon" title="Expand/Collapse All"></label>
                 <xsl:text>Table of Contents</xsl:text>
             </p>
-            <input type="checkbox" id="expand-all" class="expand-all-toggle" />
-            <label for="expand-all" class="expand-all-button">
-                <span class="expand-text">Expand All</span>
-                <span class="collapse-text">Collapse All</span>
-            </label>
             <xsl:for-each select="*[local-name(.) = 'Vision']">
                 <p class="tocentry">
                     <xsl:variable name="anchor">
@@ -1463,48 +1756,114 @@
 
     <xsl:template match="*[local-name(.) = 'Stakeholder' and normalize-space(.)]">
         <xsl:param name="level" select="'org'" />
-        <p class="{concat(@level, 'stakeholder')}">
-            <xsl:choose>
-                <xsl:when test="@StakeholderTypeType = 'Generic_Group'">
-                    <img src="images/group.png" alt="Group Image" width="30px" height="30px" />
-                </xsl:when>
-                <xsl:when test="@StakeholderTypeType = 'Person'">
-                    <img src="images/person.png" alt="Person Image" width="30px" height="30px" />
-                </xsl:when>
-                <xsl:when test="@StakeholderTypeType = 'Organization'">
-                    <img src="images/organization.png" alt="Organization Image" width="30px" height="30px" />
-                </xsl:when>
-            </xsl:choose>
-            <xsl:call-template name="name-desc-role" />
-        </p>
+        <div class="{concat($level, 'stakeholder')}">
+            <div class="stakeholder-card-header">
+                <xsl:choose>
+                    <xsl:when test="@StakeholderTypeType = 'Generic_Group'">
+                        <img src="images/group.png" alt="Group" width="20px" height="20px" style="margin-right: 8px; vertical-align: middle;" />
+                    </xsl:when>
+                    <xsl:when test="@StakeholderTypeType = 'Person'">
+                        <img src="images/person.png" alt="Person" width="20px" height="20px" style="margin-right: 8px; vertical-align: middle;" />
+                    </xsl:when>
+                    <xsl:when test="@StakeholderTypeType = 'Organization'">
+                        <img src="images/organization.png" alt="Organization" width="20px" height="20px" style="margin-right: 8px; vertical-align: middle;" />
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:value-of select="*[local-name() = 'Name']" />
+            </div>
+            <xsl:if test="*[local-name() = 'Description' and normalize-space(.)]">
+                <div class="stakeholder-card-field">
+                    <span class="stakeholder-card-label">Description:</span>
+                    <span class="stakeholder-card-value">
+                        <xsl:value-of select="*[local-name() = 'Description']" />
+                    </span>
+                </div>
+            </xsl:if>
+            <xsl:if test="*[local-name() = 'RoleType' and normalize-space(.)]">
+                <div class="stakeholder-card-field">
+                    <span class="stakeholder-card-label">Role Type:</span>
+                    <span class="stakeholder-card-value">
+                        <xsl:for-each select="*[local-name() = 'RoleType' and normalize-space(.)]">
+                            <xsl:if test="position() > 1">, </xsl:if>
+                            <xsl:value-of select="." />
+                        </xsl:for-each>
+                    </span>
+                </div>
+            </xsl:if>
+            <xsl:if test="*[local-name() = 'Role' and normalize-space(.)]">
+                <xsl:for-each select="*[local-name() = 'Role' and normalize-space(.)]">
+                    <div class="stakeholder-card-field">
+                        <span class="stakeholder-card-value">
+                            <strong><xsl:value-of select="*[local-name() = 'Name']" /></strong>
+                            <xsl:if test="*[local-name() = 'Description' and normalize-space(.)]">
+                                <span> - <xsl:value-of select="*[local-name() = 'Description']" /></span>
+                            </xsl:if>
+                            <xsl:if test="*[local-name() = 'RoleType' and normalize-space(.)]">
+                                <span class="stakeholder-role"> (<xsl:value-of select="*[local-name() = 'RoleType']" />)</span>
+                            </xsl:if>
+                        </span>
+                    </div>
+                </xsl:for-each>
+            </xsl:if>
+        </div>
     </xsl:template>
 
     <xsl:template match="*[local-name(.) = 'Stakeholder' and normalize-space(.)]" mode="simple">
         <xsl:param name="level" select="'org'" />
         <div class="stakeholder-simple-item">
-            <xsl:call-template name="name-desc-role" />
+            <strong><xsl:value-of select="*[local-name() = 'Name']" /></strong>
+            <xsl:if test="*[local-name() = 'Description' and normalize-space(.)]">
+                <span> - <xsl:value-of select="*[local-name() = 'Description']" /></span>
+            </xsl:if>
+            <xsl:if test="*[local-name() = 'RoleType' and normalize-space(.)]">
+                <span class="stakeholder-role"> (<xsl:for-each select="*[local-name() = 'RoleType' and normalize-space(.)]">
+                    <xsl:if test="position() > 1">, </xsl:if>
+                    <xsl:value-of select="." />
+                </xsl:for-each>)</span>
+            </xsl:if>
         </div>
     </xsl:template>
 
     <xsl:template name="name-desc-role">
-        <xsl:call-template name="name-desc" />
-        <xsl:if test="*[local-name() = 'RoleType' and normalize-space(.)]">
-            <xsl:text> (</xsl:text>
-            <xsl:for-each select="*[local-name() = 'RoleType' and normalize-space(.)]">
-                <xsl:if test="position() > 1">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-                <xsl:value-of select="." />
-            </xsl:for-each>
-            <xsl:text>)</xsl:text>
-        </xsl:if>
-        <xsl:if test="*[local-name() = 'Role' and normalize-space(.)]">
-            <xsl:text> </xsl:text>
-            <xsl:for-each select="*[local-name() = 'Role' and normalize-space(.)]">
-                <div class="single-break"></div>
-                <xsl:call-template name="name-desc-role" />
-            </xsl:for-each>
-        </xsl:if>
+        <div class="stakeholder-card">
+            <div class="stakeholder-card-header">
+                <xsl:value-of select="*[local-name() = 'Name']" />
+            </div>
+            <xsl:if test="*[local-name() = 'Description' and normalize-space(.)]">
+                <div class="stakeholder-card-field">
+                    <span class="stakeholder-card-label">Description:</span>
+                    <span class="stakeholder-card-value">
+                        <xsl:value-of select="*[local-name() = 'Description']" />
+                    </span>
+                </div>
+            </xsl:if>
+            <xsl:if test="*[local-name() = 'RoleType' and normalize-space(.)]">
+                <div class="stakeholder-card-field">
+                    <span class="stakeholder-card-label">Role Type:</span>
+                    <span class="stakeholder-card-value">
+                        <xsl:for-each select="*[local-name() = 'RoleType' and normalize-space(.)]">
+                            <xsl:if test="position() > 1">, </xsl:if>
+                            <xsl:value-of select="." />
+                        </xsl:for-each>
+                    </span>
+                </div>
+            </xsl:if>
+            <xsl:if test="*[local-name() = 'Role' and normalize-space(.)]">
+                <xsl:for-each select="*[local-name() = 'Role' and normalize-space(.)]">
+                    <div class="stakeholder-card-field">
+                        <span class="stakeholder-card-value">
+                            <strong><xsl:value-of select="*[local-name() = 'Name']" /></strong>
+                            <xsl:if test="*[local-name() = 'Description' and normalize-space(.)]">
+                                <span> - <xsl:value-of select="*[local-name() = 'Description']" /></span>
+                            </xsl:if>
+                            <xsl:if test="*[local-name() = 'RoleType' and normalize-space(.)]">
+                                <span class="stakeholder-role"> (<xsl:value-of select="*[local-name() = 'RoleType']" />)</span>
+                            </xsl:if>
+                        </span>
+                    </div>
+                </xsl:for-each>
+            </xsl:if>
+        </div>
     </xsl:template>
 
     <xsl:template name="name-desc">
