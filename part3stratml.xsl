@@ -279,6 +279,23 @@
                         margin-right: 0;
                     }
                     
+                    /* Enhanced styles for organization info */
+                    .org-info {
+                        font-size: 20px !important;
+                        margin: 20px 0 !important;
+                    }
+                    
+                    .org-title {
+                        font-size: 20px !important;
+                        font-weight: 700 !important;
+                        color: #0f172a !important;
+                    }
+                    
+                    .org-info .admin-inline-name {
+                        font-size: 20px !important;
+                        font-weight: 600 !important;
+                    }
+                    
                     .admin-simple-field {
                         margin-bottom: 12px;
                         line-height: 1.6;
@@ -1192,19 +1209,19 @@
                     
                     <!-- Simple Administrative Information Layout -->
                     <div class="admin-info-simple">
+                        <xsl:variable name="org" select="$plan/*[local-name(.) = 'StrategicPlanCore']/*[local-name(.) = 'Organization']" />
+                        <xsl:if test="normalize-space($org)">
+                            <p class="admin-inline-section org-info">
+                                <span class="admin-title-inline org-title">Organization: </span>
+                                <xsl:apply-templates select="$org" mode="inline" />
+                            </p>
+                        </xsl:if>
+                        
                         <xsl:variable name="submitter" select="$plan//*[local-name(.) = 'Submitter']" />
                         <xsl:if test="normalize-space($submitter)">
                             <p class="admin-inline-section">
                                 <span class="admin-title-inline">Submitter: </span>
                                 <xsl:apply-templates select="$submitter" mode="inline" />
-                            </p>
-                        </xsl:if>
-                        
-                        <xsl:variable name="org" select="$plan/*[local-name(.) = 'StrategicPlanCore']/*[local-name(.) = 'Organization']" />
-                        <xsl:if test="normalize-space($org)">
-                            <p class="admin-inline-section">
-                                <span class="admin-title-inline">Organization: </span>
-                                <xsl:apply-templates select="$org" mode="inline" />
                             </p>
                         </xsl:if>
                     </div>
@@ -1588,21 +1605,27 @@
                 </p>
             </xsl:for-each>
             <xsl:if test="*[local-name(.) = 'Value']">
-                <p class="tocentry">
-                    <a href="#values_">
-                        <xsl:text>Value</xsl:text>
-                        <xsl:if test="count(*[local-name(.) = 'Value']) > 1">
-                            <xsl:text>s</xsl:text>
-                        </xsl:if>
-                    </a>
-                </p>
-                <xsl:for-each select="*[local-name(.) = 'Value']">
-                    <p class="tocsubentry">
-                        <a href="#{generate-id(.)}">
-                            <xsl:apply-templates select="*[local-name(.) = 'Name']" />
+                <xsl:variable name="valuesID" select="'values-container'" />
+                <div class="goal-container">
+                    <input type="checkbox" id="toggle-{$valuesID}" class="toggle-input" />
+                    <label for="toggle-{$valuesID}" class="goal-title">
+                        <a href="#values_">
+                            <xsl:text>Value</xsl:text>
+                            <xsl:if test="count(*[local-name(.) = 'Value']) > 1">
+                                <xsl:text>s</xsl:text>
+                            </xsl:if>
                         </a>
-                    </p>
-                </xsl:for-each>
+                    </label>
+                    <div class="objectives-container">
+                        <xsl:for-each select="*[local-name(.) = 'Value']">
+                            <p class="tocsubentry">
+                                <a href="#{generate-id(.)}">
+                                    <xsl:apply-templates select="*[local-name(.) = 'Name']" />
+                                </a>
+                            </p>
+                        </xsl:for-each>
+                    </div>
+                </div>
             </xsl:if>
             <xsl:for-each select="*[local-name(.) = 'Goal']">
                 <xsl:variable name="goalID" select="generate-id()" />
