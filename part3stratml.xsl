@@ -896,6 +896,72 @@
                         font-size: 16px;
                     }
                     
+                    /* OtherInformation Toggle Styles */
+                    .other-info-toggle {
+                        background: none;
+                        border: 1px solid #d1d5db;
+                        border-radius: 4px;
+                        padding: 4px 8px;
+                        font-size: 11px;
+                        color: #6b7280;
+                        cursor: pointer;
+                        margin: 8px 0;
+                        transition: all 0.2s ease;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 4px;
+                    }
+                    
+                    .other-info-toggle:hover {
+                        background-color: #f3f4f6;
+                        border-color: #9ca3af;
+                        color: #374151;
+                    }
+                    
+                    .other-info-toggle::before {
+                        content: "+";
+                        font-size: 12px;
+                        font-weight: bold;
+                        transition: transform 0.2s ease;
+                        display: inline-block;
+                        margin-right: 4px;
+                        width: 12px;
+                        text-align: center;
+                    }
+                    
+                    .other-info-toggle.expanded::before {
+                        content: "-";
+                        transform: none;
+                    }
+                    
+                    .other-information {
+                        display: none;
+                        margin: 12px 0;
+                        padding: 12px;
+                        background-color: #f9fafb;
+                        border: 1px solid #e5e7eb;
+                        border-radius: 6px;
+                        font-size: 13px;
+                        color: #4b5563;
+                        line-height: 1.5;
+                    }
+                    
+                    .other-information.visible {
+                        display: block;
+                        animation: fadeInSlide 0.3s ease-out;
+                    }
+                    
+                    @keyframes fadeInSlide {
+                        from {
+                            opacity: 0;
+                            transform: translateY(-10px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                    
                     /* Modern pre and code styling */
                     pre, samp {
                         font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
@@ -939,6 +1005,22 @@
                             });
                         }
                     });
+                    
+                    // Function to toggle OtherInformation visibility
+                    function toggleOtherInfo() {
+                        const content = document.getElementById('otherInfoContent');
+                        const toggle = document.getElementById('otherInfoToggle');
+                        
+                        if (content &amp;&amp; toggle) {
+                            if (content.classList.contains('visible')) {
+                                content.classList.remove('visible');
+                                toggle.classList.remove('expanded');
+                            } else {
+                                content.classList.add('visible');
+                                toggle.classList.add('expanded');
+                            }
+                        }
+                    }
                 </script>
                 
                 <!-- Additional modern styles for charts -->
@@ -1184,9 +1266,17 @@
                             <xsl:with-param name="text" select="$descText"/>
                         </xsl:call-template>
                     </p>
-                    <p class="other-information">
-                        <xsl:apply-templates select="strat:PerformancePlanOrReport/strat:OtherInformation" mode="transform"/>
-                    </p>
+                    
+                    <!-- OtherInformation Toggle Section -->
+                    <xsl:if test="normalize-space($plan/*[local-name(.) = 'OtherInformation'])">
+                        <button class="other-info-toggle" onclick="toggleOtherInfo()" id="otherInfoToggle">
+                            Other Information
+                        </button>
+                        <div class="other-information" id="otherInfoContent">
+                            <xsl:apply-templates select="$plan/*[local-name(.) = 'OtherInformation']" mode="transform"/>
+                        </div>
+                    </xsl:if>
+                    
                     <xsl:for-each select="$plan//*[local-name(.) = 'AdministrativeInformation']">
                         <xsl:variable name="anchor">
                             <xsl:call-template name="getid" />
@@ -1670,6 +1760,12 @@
     </xsl:template>
 
     <xsl:template match="strat:OtherInformation" mode="transform">
+        <xsl:call-template name="replace-special-characters">
+            <xsl:with-param name="text" select="normalize-space(.)"/>
+        </xsl:call-template>
+    </xsl:template>
+
+    <xsl:template match="*[local-name(.) = 'OtherInformation']" mode="transform">
         <xsl:call-template name="replace-special-characters">
             <xsl:with-param name="text" select="normalize-space(.)"/>
         </xsl:call-template>
