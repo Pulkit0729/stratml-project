@@ -1330,6 +1330,14 @@
                         </xsl:for-each>
                     </xsl:if>
                     <xsl:apply-templates select="//*[local-name(.) = 'Goal']" />
+                    
+                    <!-- Current stylesheet credit -->
+                    <p class="meta">
+                        <strong>Updated by:</strong> Pulkit | <a href="mailto:pulkit0729@gmail.com"><xsl:text>pulkit0729@gmail.com</xsl:text></a> | <xsl:text>Stylesheet revision: September 2025</xsl:text>
+                    </p>
+                    
+                    <!-- Previous revisions (commented out) -->
+                    <!--
                     <p class="meta">
                         <a href="http://mackenziesolutions.co.uk" target="_blank">
                             <xsl:text>http://mackenziesolutions.co.uk</xsl:text>
@@ -1365,6 +1373,7 @@
                             <samp>http://www.xmldatasets.net/StratML</samp>
                         </a>
                     </p>
+                    -->
                 </div>
             </body>
         </html>
